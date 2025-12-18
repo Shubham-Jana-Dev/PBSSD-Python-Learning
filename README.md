@@ -48,4 +48,4 @@ I learned how to use the `keyword` module to list all words reserved by the Pyth
 ## 🚀 About the Course
 The **PBSSD** program aims to equip students with industry-ready coding skills. I am documenting this journey to track my growth and share my learning with the community.
 
-**Connect with me on [LinkedIn]([YOUR_LINKEDIN_PROFILE_URL_HERE](https://www.linkedin.com/in/shubham-jana-3b650628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app))!**
+**Connect with me on [LinkedIn](https://www.linkedin.com/in/shubham-jana-3b650628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )!**
