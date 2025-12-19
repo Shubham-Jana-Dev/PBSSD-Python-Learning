@@ -32,10 +32,27 @@ I learned how to use the `keyword` module to list all words reserved by the Pyth
 
 ---
 
-## 📂 Repository Structure
-* `/Day_01`: Contains the introductory script `day01_pbssd.py` and IDLE screenshots.
-* `/Notes`: Detailed documentation for study purposes.
+## 🗓️ Day 02: Identifiers, Variables, and Memory
+**Date:** December 19, 2025  
+**Focus:** Naming conventions, ASCII values, and memory optimization.
 
+### 1. Python Identifiers
+I learned the strict rules for naming variables (identifiers) in Python:
+* **Case Sensitivity:** Python is case-sensitive due to different **ASCII** values.
+* **Naming Rules:** Identifiers cannot start with digits and cannot contain special symbols except underscores (`_`).
+* **Conversion Tools:** I used `ord()` to find ASCII values and `chr()` to convert ASCII back to characters.
+
+### 2. Variable Management
+* **Memory Optimization:** Python uses **Dynamic Memory Allocation**. If multiple variables share the same value, they point to the same Hash Address (Memory ID) to save RAM.
+* **Assignments:** Explored single-value, multi-variable, and corresponding assignments (e.g., `x, y = 5, 10`).
+
+### 3. Handling User Input
+* **Dynamic Input:** Used the `input()` function to interact with the keyboard.
+* **Default Type:** Learned that `input()` always returns data as a `str` (String) by default.
+
+## 📂 Repository Structure
+* Day_01/ -> day01_pbssd.py
+* Day_02/ -> day02_pbssd.py
 ---
 
 ## 🛠️ Tools Used
