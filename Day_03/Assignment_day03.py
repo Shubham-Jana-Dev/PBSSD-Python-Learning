@@ -82,6 +82,27 @@ print("the area of the half Rhombus is",area1)
 print("the area of the half circle is",area2)
 '''
 # 11. Find out the total surface area of a cube in Python script.
+'''
 s = float(input("Enter the side "))
 area = 6*(s*s)
 print("The total area is ",area)
+'''
+# 1. Define the sides and convert all to meters
+# 2.3 cm to meters
+side_a = 2.3 / 100 
+
+# 5.3 m is already in meters
+side_b = 5.3 
+
+# 6.31 micro meters to meters
+side_c = 6.31 / 1000000 
+
+# 2. Calculate the semi-perimeter (s)
+s = (side_a + side_b + side_c) / 2
+
+# 3. Calculate the Area using Heron's Formula
+# We use ** 0.5 to perform a square root without a library
+area = (s * (s - side_a) * (s - side_b) * (s - side_c)) ** 0.5
+
+# 4. Display the result
+print("The area is:", area)
