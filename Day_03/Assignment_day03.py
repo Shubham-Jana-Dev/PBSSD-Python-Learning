@@ -14,7 +14,7 @@ l = ((r*r)+(h*h))**(1/2)
 area = 3.14*r*(l+r)
 print("The area of the conical vessel is ",area)
 '''
-# find out the area of parallelepiped by python script.
+# 3. find out the area of parallelepiped by python script.
 """
 a = float(input("Enter the first side (a): "))
 b = float(input("Enter the second side (b): "))
@@ -25,3 +25,13 @@ face3 = h*a
 area = 2*(face1 + face2 + face3)
 print("The total surface area is ",area)
 """
+# 4. Solve quadratic equation by python script.
+
+a = float(input("Enter a : "))
+b = float(input("Enter b : "))
+c = float(input("Enter c : "))
+d = (b*b)-(4*a*c)
+root1 = (-b+(d**0.5))/(2*a)
+root2 = (-b-(d**0.5))/(2*a)
+print("Solution 1 : ",root1)
+print("Solution 2 : ",root2)
