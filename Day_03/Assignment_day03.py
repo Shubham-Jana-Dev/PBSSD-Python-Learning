@@ -26,7 +26,7 @@ area = 2*(face1 + face2 + face3)
 print("The total surface area is ",area)
 """
 # 4. Solve quadratic equation by python script.
-
+'''
 a = float(input("Enter a : "))
 b = float(input("Enter b : "))
 c = float(input("Enter c : "))
@@ -35,3 +35,8 @@ root1 = (-b+(d**0.5))/(2*a)
 root2 = (-b-(d**0.5))/(2*a)
 print("Solution 1 : ",root1)
 print("Solution 2 : ",root2)
+''' 
+# 5. Find the area of equilateral triangle by using Python script.
+h = float(input("Enter the value of height "))
+area = (h*h)/(3**0.5)
+print("The area of the equilateral triangle is ", area)
