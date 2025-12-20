@@ -56,9 +56,11 @@ m = k * 0.6214
 print(m) 
 """
 # 8. Check a triangle is right angle triangle or not without conditional statement by using Python script.
-
+'''
 a = float(input("Enter the shortest side : "))
 b = float(input("Enter the middle side : "))
 c = float(input("Enter the longest side : "))
 is_right_angle = (a*a + b*b) == (c*c)
 print("Is this a right-angled triangle?",is_right_angle)
+'''
+
