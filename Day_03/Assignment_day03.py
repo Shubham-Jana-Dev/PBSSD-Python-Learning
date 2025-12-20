@@ -63,4 +63,21 @@ c = float(input("Enter the longest side : "))
 is_right_angle = (a*a + b*b) == (c*c)
 print("Is this a right-angled triangle?",is_right_angle)
 '''
-
+# 9. Convert temperature from centigrade to Fahrenheit or Kelvin in Python script.
+'''
+c= float(input("Enter the value of temperature in centigrade : "))
+f= (c*1.8)+32
+k = c+273.15
+print("in fahrenheit : ",f)
+print("in kelvin : ",k)
+'''
+# 10. Find out the area of a rhombus and hub circle by using Python script.
+'''
+d1 = float(input("enter the fast diagonal of the rhombus"))
+d2 = float(input("enter the second diagonal of the rhombus"))
+r = float(input("enter the radius of the circle"))
+area1 =(d1*d2)/4
+area2 = (3.14*(r*r))/2
+print("the area of the half Rhombus is",area1)
+print("the area of the half circle is",area2)
+'''
