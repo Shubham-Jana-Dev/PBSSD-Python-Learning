@@ -49,3 +49,7 @@ b = float(input("Enter the value of semi-minor axis: "))
 area = 3.14*a*b
 print("The area of the ellipse is : ", area )
 '''
+# 7. Convert kilometre to miles by using Python script.
+k = float(input("Enter Kilometre : "))
+m = k * 0.6214
+print(m) 
