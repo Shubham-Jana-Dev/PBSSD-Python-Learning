@@ -81,3 +81,7 @@ area2 = (3.14*(r*r))/2
 print("the area of the half Rhombus is",area1)
 print("the area of the half circle is",area2)
 '''
+# 11. Find out the total surface area of a cube in Python script.
+s = float(input("Enter the side "))
+area = 6*(s*s)
+print("The total area is ",area)
