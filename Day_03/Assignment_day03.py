@@ -37,6 +37,15 @@ print("Solution 1 : ",root1)
 print("Solution 2 : ",root2)
 ''' 
 # 5. Find the area of equilateral triangle by using Python script.
+'''
 h = float(input("Enter the value of height "))
 area = (h*h)/(3**0.5)
 print("The area of the equilateral triangle is ", area)
+'''
+# 6. Find out the area of a ellipse by using Python script.
+'''
+a = float(input("Enter the value of semi-major axis: "))
+b = float(input("Enter the value of semi-minor axis: "))
+area = 3.14*a*b
+print("The area of the ellipse is : ", area )
+'''
