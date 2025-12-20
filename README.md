@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/PBSSD.png" alt="PBSSD Logo" width="200">
+</p>
+
 # 🐍 PBSSD Python Programming Journey
 
 Welcome to my learning repository! This project documents my progress in the **Paschim Banga Society for Skill Development (PBSSD)** Python Programming course. Here, I store my daily notes, practice scripts, and logic-building exercises.
@@ -9,26 +13,13 @@ Welcome to my learning repository! This project documents my progress in the **P
 **Focus:** Development Environments, Dynamic Typing, and Memory Management.
 
 ### 1. Understanding the Environment
-Python provides a built-in tool called **IDLE** (Integrated Development and Learning Environment) which I explored today:
-* **Interactive Shell:** Used for quick testing and arithmetic operations.
-* **Script Mode (Editor):** Used for writing permanent programs and saving them as `.py` files.
-* **PVM (Python Virtual Machine):** The internal engine that executes the source code we write.
+* **IDLE:** Explored the Interactive Shell for quick testing and Script Mode for permanent programs.
+* **PVM (Python Virtual Machine):** Learned how the internal engine executes our source code.
 
 ### 2. Key Technical Concepts
-During the session, I practiced several core Python features:
-
-#### 🔹 Dynamic Typing
-Python identifies data types automatically at runtime. I used the `type()` function to verify different classes:
-- `int`: Whole numbers (e.g., 19)
-- `str`: Text/Strings (e.g., "Shubham Jana")
-- `float`: Decimal values (e.g., 2.3)
-- `list`: Ordered collections (e.g., [1, 2, 3])
-
-#### 🔹 Memory Management (`id`)
-Every value in Python is an object stored in memory. I used the `id()` function to fetch the unique memory address (Hash Address) of various objects.
-
-#### 🔹 Reserved Keywords
-I learned how to use the `keyword` module to list all words reserved by the Python language for specific logic.
+* **Dynamic Typing:** Verified classes (`int`, `str`, `float`, `list`) using the `type()` function.
+* **Memory Management:** Used `id()` to fetch unique memory addresses of objects.
+* **Keywords:** Utilized the `keyword` module to identify reserved words.
 
 ---
 
@@ -37,32 +28,42 @@ I learned how to use the `keyword` module to list all words reserved by the Pyth
 **Focus:** Naming conventions, ASCII values, and memory optimization.
 
 ### 1. Python Identifiers
-I learned the strict rules for naming variables (identifiers) in Python:
-* **Case Sensitivity:** Python is case-sensitive due to different **ASCII** values.
-* **Naming Rules:** Identifiers cannot start with digits and cannot contain special symbols except underscores (`_`).
-* **Conversion Tools:** I used `ord()` to find ASCII values and `chr()` to convert ASCII back to characters.
+* **Case Sensitivity:** Learned how Python differentiates names based on **ASCII** values.
+* **Naming Rules:** Mastered rules for valid identifiers (no leading digits, no special symbols except `_`).
+* **Built-in Functions:** Used `ord()` for character-to-ASCII and `chr()` for ASCII-to-character conversion.
 
-### 2. Variable Management
-* **Memory Optimization:** Python uses **Dynamic Memory Allocation**. If multiple variables share the same value, they point to the same Hash Address (Memory ID) to save RAM.
-* **Assignments:** Explored single-value, multi-variable, and corresponding assignments (e.g., `x, y = 5, 10`).
+---
 
-### 3. Handling User Input
-* **Dynamic Input:** Used the `input()` function to interact with the keyboard.
-* **Default Type:** Learned that `input()` always returns data as a `str` (String) by default.
+## 🗓️ Day 03: Variable Scope & Memory Stack
+**Date:** December 20, 2025  
+**Focus:** Local vs. Global variables and LIFO memory logic.
+
+### 1. Scope and Accessibility
+* **Local Variables:** Declared inside blocks/functions; restricted visibility to that local area.
+* **Global Variables:** Declared at the top level; accessible throughout the script.
+* **The `global` Keyword:** Learned to modify global values from within a local scope.
+
+### 2. Memory Logic (LIFO)
+* **Stack Memory:** Explored how Python manages function calls using the **Last-In, First-Out** principle.
+
+### 3. Homework & Problem Solving
+* **Solved 12 logic-based questions** regarding variable scope and memory output.
+* Solutions are available in the [Day_03 Folder](./Day_03).
+
+---
 
 ## 📂 Repository Structure
-* Day_01/ -> day01_pbssd.py
-* Day_02/ -> day02_pbssd.py
----
-
-## 🛠️ Tools Used
-* **Language:** Python 3.13.7
-* **IDE:** IDLE (Integrated Development and Learning Environment)
-* **Platform:** macOS / Darwin
-
----
-
-## 🚀 About the Course
-The **PBSSD** program aims to equip students with industry-ready coding skills. I am documenting this journey to track my growth and share my learning with the community.
-
-**Connect with me on [LinkedIn](https://www.linkedin.com/in/shubham-jana-3b650628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )!**
+```text
+PBSSD-PYTHON-LEARNING/
+├── assets/
+│   └── PBSSD.png
+├── Day_01/
+│   └── day01_pbssd.py
+├── Day_02/
+│   └── day02_pbssd.py
+├── Day_03/
+│   ├── Assignment_day03.py
+│   └── day03_pbssd.py
+├── .gitignore
+├── LICENSE
+└── README.md
