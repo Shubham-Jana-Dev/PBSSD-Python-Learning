@@ -49,7 +49,36 @@ Welcome to my learning repository! This project documents my progress in the **P
 ### 3. Homework & Problem Solving
 * **Solved 12 logic-based questions** regarding variable scope and memory output.
 * Solutions are available in the [Day_03 Folder](./Day_03).
+---
 
+## 🚀 Day 03: Practical Assignment Showcase
+**Total Tasks:** 12 Python Scripts  
+**Objective:** Mastering arithmetic operators, user input handling, and mathematical logic using "Pure Python" (No external modules).
+
+### 🛠️ Problem-Solving Highlights
+Below is the list of 12 logic-based programs I developed and pushed to the `Day_03/` folder:
+
+| No. | Problem Statement | Core Logic / Formula |
+| :--- | :--- | :--- |
+| 01 | **Area of Parallelogram** | `base * height` |
+| 02 | **Area of Conical Vessel** | $A = \pi r (l + r)$ (using $l = \sqrt{r^2 + h^2}$) |
+| 03 | **Area of Parallelepiped** | $2 \times (ab + bh + ha)$ |
+| 04 | **Quadratic Equation** | Used discriminant $d = b^2 - 4ac$ and roots formula |
+| 05 | **Equilateral Triangle** | $Area = \frac{h^2}{\sqrt{3}}$ |
+| 06 | **Area of Ellipse** | $\pi \times a \times b$ |
+| 07 | **KM to Miles** | $km \times 0.6214$ |
+| 08 | **Right-Angle Check** | Pythagorean Theorem: $a^2 + b^2 == c^2$ (Boolean logic) |
+| 09 | **Temp Converter** | $C \rightarrow F$ and $C \rightarrow K$ |
+| 10 | **Rhombus & Half-Circle** | $\frac{d_1 \times d_2}{4}$ and $\frac{\pi r^2}{2}$ |
+| 11 | **Surface Area of Cube** | $6 \times s^2$ |
+| 12 | **Precision Heron's** | Unit conversion: $cm \rightarrow m$ and $\mu m \rightarrow m$ |
+
+### 🔍 Technical Observation
+During this assignment, I practiced **Precision Unit Conversion**. In Task 12, I manually converted $2.3 \text{ cm}$ and $6.31 \text{ }\mu\text{m}$ to meters to ensure the dimensions were standardized before applying Heron's Formula.
+
+
+
+---
 ---
 
 ## 🗓️ Day 04: Literals & Number Systems
