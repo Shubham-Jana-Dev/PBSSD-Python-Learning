@@ -87,7 +87,13 @@ s = float(input("Enter the side "))
 area = 6*(s*s)
 print("The total area is ",area)
 '''
-# 1. Define the sides and convert all to meters
+# 1. Calculate the area of a triangle (in square meters) whose sides have the following lengths:
+
+# Side A: 2.3 cm
+
+# Side B: 5.3 m
+
+# Side C: 6.31 μm (micrometers)
 # 2.3 cm to meters
 side_a = 2.3 / 100 
 
