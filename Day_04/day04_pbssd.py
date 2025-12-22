@@ -15,3 +15,8 @@ print(type(b))
 print(type(c))
 print(type(d))
 print(type(e))
+# Binary representation:
+k = 0b1011010011
+h = 0B11010011111
+print(k)
+print(h)
