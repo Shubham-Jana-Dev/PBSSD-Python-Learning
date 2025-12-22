@@ -52,6 +52,31 @@ Welcome to my learning repository! This project documents my progress in the **P
 
 ---
 
+## 🗓️ Day 04: Literals & Number Systems
+**Date:** December 21, 2025  
+**Focus:** Data types (Literals) and Base-N number representations.
+
+### 1. Python Literals
+Literals are constant values assigned to variables. I practiced identifying various types:
+* **Numeric:** `int` (19), `float` (45.7), `complex` (10+20j).
+* **Boolean:** `True` / `False`.
+* **Collections:** `list` [ ], `tuple` ( ), `set` { }, and `dict` {key:value}.
+
+### 2. Integral Representations (Number Systems)
+Python allows representing integers in four different bases:
+
+| System | Base (Radix) | Prefix | Digits |
+| :--- | :--- | :--- | :--- |
+| **Decimal** | 10 | None | 0-9 |
+| **Binary** | 2 | `0b` or `0B` | 0, 1 |
+| **Octal** | 8 | `0o` or `0O` | 0-7 |
+| **Hexadecimal**| 16 | `0x` or `0X` | 0-9, A-F |
+
+### 3. Conversion Functions
+* **`bin()`**: Converts an integer to its binary string representation.
+* **`oct()`**: Converts an integer to its octal string representation.
+* **`hex()`**: Converts an integer to its hexadecimal string representation.
+
 ## 📂 Repository Structure
 ```text
 PBSSD-PYTHON-LEARNING/
