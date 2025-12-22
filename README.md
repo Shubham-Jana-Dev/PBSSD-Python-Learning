@@ -107,17 +107,20 @@ Python allows representing integers in four different bases:
 * **`hex()`**: Converts an integer to its hexadecimal string representation.
 
 ## 📂 Repository Structure
+## 📂 Repository Structure
 ```text
 PBSSD-PYTHON-LEARNING/
 ├── assets/
-│   └── PBSSD.png
+│   └── PBSSD.png              # Program Logo
 ├── Day_01/
-│   └── day01_pbssd.py
+│   └── day01_pbssd.py         # Foundations & IDLE
 ├── Day_02/
-│   └── day02_pbssd.py
+│   └── day02_pbssd.py         # Identifiers & ASCII
 ├── Day_03/
-│   ├── Assignment_day03.py
-│   └── day03_pbssd.py
-├── .gitignore
-├── LICENSE
-└── README.md
+│   ├── day03_pbssd.py         # Scope & Memory Stack
+│   └── Assignment_day03.py    # 12 Logic-based math scripts
+├── Day_04/
+│   └── day04_pbssd.py         # Literals & Number Systems
+├── .gitignore                 # Files to exclude from Git
+├── LICENSE                    # Project License
+└── README.md                  # Project Documentation
