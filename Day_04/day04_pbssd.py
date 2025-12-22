@@ -1,5 +1,5 @@
 # Python Literals:
-print("-----Python Literals:-----")
+print("--------Python Literals:---------")
 x = {2,5,6}
 y = 45.7
 z = 10 + 20j
@@ -17,7 +17,7 @@ print(type(c))
 print(type(d))
 print(type(e))
 # Binary representation:
-print("-----binary representation:-----")
+print("-----binary representation:------")
 k = 0b1011010011
 h = 0B11010011111
 print(k)
@@ -28,3 +28,9 @@ g = 23
 u = 67
 print(bin(g))
 print(bin(u))
+# Explore octal representation
+print("------Octal representation:------")
+t = 0o3452
+m = 0O6537
+print(bin(t))
+print(bin(m))
