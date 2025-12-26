@@ -76,6 +76,28 @@ Below is the list of 12 logic-based programs I developed and pushed to the `Day_
 ### 🔍 Technical Observation
 During this assignment, I practiced **Precision Unit Conversion**. In Task 12, I manually converted $2.3 \text{ cm}$ and $6.31 \text{ }\mu\text{m}$ to meters to ensure the dimensions were standardized before applying Heron's Formula.
 
+---
+
+## 🗓️ Day 05: Strings, Hex, and Floating-Point Precision
+**Date:** December 26, 2025  
+**Focus:** Hexadecimal representations, String delimiters, and Manual Base Conversions.
+
+### 1. Key Concepts
+* **Hexadecimal:** Base-16 system using `0-9` and `A-F`. Prefixed with `0x`.
+* **String Literals:** Mastered `' '`, `" "`, and `''' '''` for multi-line flexibility.
+* **Exponential Notation:** Using `e/E` (Mantissa/Exponent) for fractional literals.
+
+### 2. Manual Octal to Hexadecimal Challenge (Homework)
+The objective was to convert complex fractional Octal numbers to Hexadecimal manually (Octal $\rightarrow$ Decimal $\rightarrow$ Hexadecimal) without using Python's built-in `hex()` or `bin()` functions.
+
+| Problem | Octal Value | Hexadecimal Result (Manual) |
+| :--- | :--- | :--- |
+| **A** | `677.677` | `0x1BF.DF8` |
+| **B** | `4546464.7676` | `0x12CCB4.FBE` |
+| **C** | `45545.5006` | `0x4B65.A06` |
+| **D** | `45432.56` | `0x4B1A.B8` |
+| **E** | `575.6565` | `0x17D.D75` |
+
 
 
 ---
