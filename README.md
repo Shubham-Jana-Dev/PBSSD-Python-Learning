@@ -104,6 +104,7 @@ Python allows representing integers in four different bases:
 * **`hex()`**: Converts an integer to its hexadecimal string representation.
   ---
 
+---
 ## 🗓️ Day 05: Strings, Hex, and Floating-Point Precision
 **Date:** December 26, 2025  
 **Focus:** Hexadecimal representations, String delimiters, and Manual Base Conversions.
@@ -112,18 +113,19 @@ Python allows representing integers in four different bases:
 * **Hexadecimal:** Base-16 system using `0-9` and `A-F`. Prefixed with `0x`.
 * **String Literals:** Mastered `' '`, `" "`, and `''' '''` for multi-line flexibility.
 * **Exponential Notation:** Using `e/E` (Mantissa/Exponent) for fractional literals.
+* **Triple Quotes (`'''`):** Used for multi-line strings and handling complex character nesting.
+* **f-Strings (Formatted Literals):** Implemented `f"Text {variable}"` for dynamic and readable output.
+* **The `.split()` Method:** Practiced splitting user input using custom delimiters.
+* **Type Casting:** * `float(ord('a'))`: Converting ASCII integers to floating-point numbers.
+    * `int(float_value)`: Handling conversions between decimal and whole numbers.
+* **Base Functions:** Verification of manual Hex/Octal math using built-in `hex()` and `oct()`.
 
-### 2. Manual Octal to Hexadecimal Challenge (Homework)
-The objective was to convert complex fractional Octal numbers to Hexadecimal manually (Octal $\rightarrow$ Decimal $\rightarrow$ Hexadecimal) without using Python's built-in `hex()` or `bin()` functions.
-
-| Problem | Octal Value | Hexadecimal Result (Manual) |
-| :--- | :--- | :--- |
-| **A** | `677.677` | `0x1BF.DF8` |
-| **B** | `4546464.7676` | `0x12CCB4.FBE` |
-| **C** | `45545.5006` | `0x4B65.A06` |
-| **D** | `45432.56` | `0x4B1A.B8` |
-| **E** | `575.6565` | `0x17D.D75` |
-
+### 📝 Example Snippet: f-Strings
+```python
+name = "Shubham Jana"
+address = "Kolkata"
+print(f"Name of the person is {name}")
+print(f"Address of {name} is {address}")
 
 
 ---
