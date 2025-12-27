@@ -57,7 +57,10 @@ x = complex("12","45") # FAILS: Cannot take two strings.
 x = complex(12,"45")   # FAILS: Second argument cannot be a string if first is numeric.
 x = complex("12",45)   # FAILS: First argument cannot be a string if second is numeric.
 '''
-
+print("------11------")
+x = 23.5 + 45.6j
+print(x)
+# LEARNING: Floating point numbers are perfectly valid as real and imaginary parts.
 
 
 
