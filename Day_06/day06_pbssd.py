@@ -39,7 +39,13 @@ print("------07------")
 # (Repeat of example 06 - practicing consistency in operations)
 print(x + y)
 print(x - y)
-
+print("------08------")
+x = 1 + 3j
+y = 3 + 4j
+print(x * y)
+print(x / y)
+# print(x // y)
+# WHY IT FAILS: Floor division (//) is NOT allowed for complex numbers because 'imaginary' values cannot be floored.
 
 
 
