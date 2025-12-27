@@ -24,3 +24,17 @@ y = 30
 z = complex(x, y)
 print(z)
 # LEARNING: You can create a complex number by passing two variables (real, imag) into the complex() constructor.
+print("------05------")
+# z = complex(input("Enter the value :- "))
+# print(z)
+print("COMMENT: This code is commented out because complex() constructor does not directly clean input strings with spaces.")
+# WHY IT FAILS: complex() is strict about string formatting (no spaces around '+' or 'j').
+
+
+
+
+
+
+
+
+
