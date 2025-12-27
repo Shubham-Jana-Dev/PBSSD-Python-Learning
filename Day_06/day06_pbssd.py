@@ -50,7 +50,13 @@ print("------09------")
 x = complex("12")
 print(x)
 # LEARNING: Passing a single string "12" creates 12+0j.
-
+print("------10------")
+print("COMMENT: Commented out because complex() only takes TWO numeric arguments, or ONE string argument.")
+'''
+x = complex("12","45") # FAILS: Cannot take two strings.
+x = complex(12,"45")   # FAILS: Second argument cannot be a string if first is numeric.
+x = complex("12",45)   # FAILS: First argument cannot be a string if second is numeric.
+'''
 
 
 
