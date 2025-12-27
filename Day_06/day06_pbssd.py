@@ -7,3 +7,10 @@ print(x, type(x))
 print(x.real)
 print(x.imag)
 # LEARNING: Accessing .real and .imag always returns a float, even if defined as int.
+print("------02------")
+x = 10 + 23j
+a = x.real
+b = x.imag
+print(a, type(a))
+print(b, type(b))
+# LEARNING: Confirms that individual components of a complex number belong to the 'float' class.
