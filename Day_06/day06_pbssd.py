@@ -29,7 +29,12 @@ print("------05------")
 # print(z)
 print("COMMENT: This code is commented out because complex() constructor does not directly clean input strings with spaces.")
 # WHY IT FAILS: complex() is strict about string formatting (no spaces around '+' or 'j').
-
+print("------06------")
+x = 10 + 30j
+y = 30 + 80j
+print(x + y)
+print(x - y)
+# LEARNING: Standard arithmetic (+ and -) works natively with complex objects.
 
 
 
