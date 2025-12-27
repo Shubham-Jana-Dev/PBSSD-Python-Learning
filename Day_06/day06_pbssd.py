@@ -69,4 +69,7 @@ print("------13------")
 x = -34e3 + (-45.6e3j)
 print(x)
 # LEARNING: Scientific notation (e) works for the imaginary part too (Result: -34000-45600j).
-
+print("------14------")
+x = (10 + (-39j) + 23j)
+print(x)
+# LEARNING: Python automatically simplifies multiple imaginary parts (Result: 10-16j).
