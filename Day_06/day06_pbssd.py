@@ -61,6 +61,9 @@ print("------11------")
 x = 23.5 + 45.6j
 print(x)
 # LEARNING: Floating point numbers are perfectly valid as real and imaginary parts.
-
+print("------12------")
+x = 34e3 + 45
+print(x)
+# LEARNING: You can mix scientific notation (34000.0) with standard integers.
 
 
