@@ -35,7 +35,10 @@ y = 30 + 80j
 print(x + y)
 print(x - y)
 # LEARNING: Standard arithmetic (+ and -) works natively with complex objects.
-
+print("------07------")
+# (Repeat of example 06 - practicing consistency in operations)
+print(x + y)
+print(x - y)
 
 
 
