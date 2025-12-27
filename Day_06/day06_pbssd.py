@@ -73,3 +73,10 @@ print("------14------")
 x = (10 + (-39j) + 23j)
 print(x)
 # LEARNING: Python automatically simplifies multiple imaginary parts (Result: 10-16j).
+print("------15------")
+# a = 10 + 39j
+# z = int(a) # FAILS: Cannot cast complex to int.
+a = 10 + 39j
+z = str(a)
+print(z, type(z))
+# LEARNING: You cannot cast complex to int/float, but converting to 'str' is allowed for display.
