@@ -65,5 +65,8 @@ print("------12------")
 x = 34e3 + 45
 print(x)
 # LEARNING: You can mix scientific notation (34000.0) with standard integers.
-
+print("------13------")
+x = -34e3 + (-45.6e3j)
+print(x)
+# LEARNING: Scientific notation (e) works for the imaginary part too (Result: -34000-45600j).
 
