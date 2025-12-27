@@ -14,3 +14,7 @@ b = x.imag
 print(a, type(a))
 print(b, type(b))
 # LEARNING: Confirms that individual components of a complex number belong to the 'float' class.
+print("------03------")
+x = complex()
+print(x)
+# LEARNING: Calling complex() without arguments creates 0j (the default complex value).
