@@ -18,3 +18,9 @@ print("------03------")
 x = complex()
 print(x)
 # LEARNING: Calling complex() without arguments creates 0j (the default complex value).
+print("------04------")
+x = 10
+y = 30
+z = complex(x, y)
+print(z)
+# LEARNING: You can create a complex number by passing two variables (real, imag) into the complex() constructor.
