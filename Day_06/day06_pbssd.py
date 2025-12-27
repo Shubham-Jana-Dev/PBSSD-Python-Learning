@@ -46,7 +46,10 @@ print(x * y)
 print(x / y)
 # print(x // y)
 # WHY IT FAILS: Floor division (//) is NOT allowed for complex numbers because 'imaginary' values cannot be floored.
-
+print("------09------")
+x = complex("12")
+print(x)
+# LEARNING: Passing a single string "12" creates 12+0j.
 
 
 
