@@ -124,6 +124,7 @@ else:
     print("Please enter a valid input :(")
 '''
 #78. Find the quadrant of a point (x, y).
+'''
 x = float(input("Enter the value of x: "))
 y = float(input ("Enter the value of y: "))
 if (x == 0 and y != 0 ):
@@ -140,3 +141,16 @@ elif(x < 0 and y < 0):
     print(" It's in the third quadrant.")
 else:
     print(" It's in the (0,0) point.")
+'''
+# 79. Determine the type of roots of a quadratic equation.
+a = float(input("Enter a = "))
+b = float(input("Enter b = "))
+c = float(input("Enter c = "))
+d = b**2 - (4*(a*c))
+if (d==0):
+    print("Real and Equal")
+elif ( d > 0):
+    print("Real and Distinct")
+else:
+    print("Complex or Imaginary")
+
