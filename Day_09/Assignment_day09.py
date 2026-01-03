@@ -1,4 +1,5 @@
-# Create a menu-driven program for arithmetic operations using if-elif.
+# 71. Create a menu-driven program for arithmetic operations using if-elif.
+'''
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 opereter = input("Enter the opereter (with in '+','-','*','/'): ")
@@ -15,7 +16,9 @@ elif(opereter == '/'):
         print(f"any number cannot be divisible by zero.")
 else:
     print("You have chosen a invalid input as the oparetor. :(")
-#Calculate income tax based on salary slabs using if-elif.
+'''
+# 72. Calculate income tax based on salary slabs using if-elif.
+'''
 print("""
 income >= 10000 = 0%
 10000 < income <= 50000 = 15%
@@ -39,3 +42,28 @@ elif (income <= 100000):
 else:
     tax = (40000 * 0.15) + (30000 * 0.2) + (20000*0.25) + (income - 100000)*0.3
     print(f"HI Unfortunately you have to pay ₹ {tax} as tax :)")
+'''
+# 73. Determine grade based on percentage with multiple conditions.
+print("""
+marks >= 0 = f
+10 < marks <= 50 = D
+50 < marks <= 60 = C
+60 < marks <= 80 = B
+80 < marks <= 90 = A
+90 < marks <= 100 = A+
+      """)
+marks = float(input("Enter your marks's percentage: "))
+if (marks <= 10 and marks >=0 ):
+    print("F")
+elif (10 < marks <= 50):
+    print("D")
+elif(50 < marks <= 60):
+    print("C")
+elif(60 < marks <= 80):
+    print("B")
+elif(80 < marks <= 90):
+    print("A")
+elif(90 < marks <= 100):
+    print("A+")
+else:
+    print("Please Enter a valid niumber :(")
