@@ -143,6 +143,7 @@ else:
     print(" It's in the (0,0) point.")
 '''
 # 79. Determine the type of roots of a quadratic equation.
+'''
 a = float(input("Enter a = "))
 b = float(input("Enter b = "))
 c = float(input("Enter c = "))
@@ -153,4 +154,12 @@ elif ( d > 0):
     print("Real and Distinct")
 else:
     print("Complex or Imaginary")
-
+'''
+# 80. Check whether a given number is a palindrome (logic-based).
+num = 121
+last_digit = num % 10
+first_digit = num // 100
+if (first_digit == last_digit):
+    print("It's a palindrome number")
+else:
+    print("It's not a palindrome number")
