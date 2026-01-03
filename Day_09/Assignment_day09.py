@@ -104,6 +104,7 @@ else:
     print("The value of the angles could not create a triangle. :(")
 '''
 #76. Check whether three sides can form a valid triangle
+'''
 a = float(input ("Enter the first value of side: "))
 b = float(input ("Enter the second value of side: "))
 c = float(input ("Enter the third value of side: "))
@@ -111,3 +112,12 @@ if(a+b>c and b+c>a and c+a>b):
     print("They can form a triangle. :)")
 else:
     print("They can not create a triangle. :(")
+'''
+#77. Determine eligibility for exam based on attendance percentage.
+att = float(input("Enter the percentage of your attendance: "))
+if (att>=75 and att<=100):
+    print("You are eligible for the exam. :)")
+elif(0<=att<75):
+    print("You are not eligible for the exam. :(")
+else:
+    print("Please enter a valid input :(")
