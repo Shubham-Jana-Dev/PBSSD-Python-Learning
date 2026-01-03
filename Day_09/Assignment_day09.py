@@ -306,6 +306,7 @@ else:
     print(f"{num5} is maximum (num5)")
 '''
 #90. Check whether a given character is a hexadecimal digit.
+'''
 char = input("Enter a single character: ")
 if ("0" <= char <= "9"):
     print("It's a hexadecimal digit.")
@@ -315,3 +316,13 @@ elif ("a" <= char <= "f"):
     print("It's a hexadecimal digit.")
 else:
     print("It's not a hexadecimal digit.")
+'''
+#91. Check whether a number lies in multiple ranges.
+num = float(input("""
+range A: 20 to 40
+rnage B: 35 to 100
+Enter the number: """))
+if (20<=num<=40) and (35<=num<=100):
+    print(f"{num} lies between both range A and B.")
+else:
+    print(f"{num} does not lie between both range A and B.")
