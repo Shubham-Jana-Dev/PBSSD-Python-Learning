@@ -67,9 +67,10 @@ elif(80 < marks <= 90):
 elif(90 < marks <= 100):
     print("A+")
 else:
-    print("Please Enter a valid niumber :(")
+    print("Please Enter a valid number :(")
 '''
 # 74. Create a simple calculator using if-elif-else.
+'''
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 opereter = input("Enter the opereter (with in '+','-','*','/'): ")
@@ -86,3 +87,17 @@ elif(opereter == '/'):
         print(f"any number cannot be divisible by zero.")
 else:
     print("You have chosen a invalid input as the oparetor. :(")
+'''
+# 75. Check whether a triangle is right-angled, acute, or obtuse.
+a = float(input("Enter the value of first angle: "))
+b = float(input("Enter the value of second angle: "))
+c = float(input("Enter the value of third angle: "))
+if ((a+b+c == 180) and a > 0 and b > 0 and c > 0):
+    if(a == 90 or b == 90 or c == 90):
+        print("It's a Right-Angled Triangle.")
+    elif(a > 90 or b > 90 or c > 90):
+        print("It's a Obtuse-Angled Triangle.")
+    elif(a < 90 and b < 90 and c <90):
+        print("It's a Acute-Angled Triangle.")
+else:
+    print("The value of the angles could not create a triangle. :(")
