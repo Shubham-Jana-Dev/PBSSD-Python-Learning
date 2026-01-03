@@ -144,7 +144,11 @@ PBSSD-PYTHON-LEARNING/
 │   ├── day03_pbssd.py         # Scope & Memory Stack
 │   └── Assignment_day03.py    # 12 Logic-based math scripts
 ├── Day_04/
-│   └── day04_pbssd.py         # Literals & Number Systems
+│   └── day04_pbssd.py
+├── Day_05/
+│   ├── day05_pbssd.py         # Scope & Memory Stack
+│   └── Assignment_day03.py    # 12 Logic-based math scripts
+         # Literals & Number Systems
 ├── .gitignore                 # Files to exclude from Git
 ├── LICENSE                    # Project License
 └── README.md                  # Project Documentation
