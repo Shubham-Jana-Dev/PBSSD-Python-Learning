@@ -44,6 +44,7 @@ else:
     print(f"HI Unfortunately you have to pay ₹ {tax} as tax :)")
 '''
 # 73. Determine grade based on percentage with multiple conditions.
+'''
 print("""
 marks >= 0 = f
 10 < marks <= 50 = D
@@ -67,3 +68,21 @@ elif(90 < marks <= 100):
     print("A+")
 else:
     print("Please Enter a valid niumber :(")
+'''
+# 74. Create a simple calculator using if-elif-else.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+opereter = input("Enter the opereter (with in '+','-','*','/'): ")
+if (opereter == '+'):
+    print(f" {num1} + {num2} = ", (num1+num2))
+elif (opereter == '-'):
+    print(f" {num1} - {num2} = ",(num1-num2))
+elif(opereter == '*'):
+    print(f" {num1} * {num2} = ",(num1*num2))
+elif(opereter == '/'):
+    if(num2 != 0):
+        print(f" {num1} / {num2} = ", (num1/num2))
+    else:
+        print(f"any number cannot be divisible by zero.")
+else:
+    print("You have chosen a invalid input as the oparetor. :(")
