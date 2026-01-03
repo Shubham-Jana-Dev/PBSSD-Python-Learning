@@ -262,6 +262,7 @@ else:
     print("No discount :(")
 '''
 #87. Determine exam result: Pass, Compartment, or Fail.
+'''
 result = float(input("""
 ------------------------------------
 <25% --> Fail :(
@@ -277,13 +278,17 @@ elif(30 <= result <= 100):
     print("Pass :)")
 else:
     print("Invalid input")
+'''
 #88. Check whether a number is divisible by 11 using condition.
+'''
 r = int(input("Enter the number: "))
 if (r%11 == 0):
     print("The number is divisible by 11. :)")
 else:
     print("The number is not divisible by 11. :(")
+'''
 #89. Find the maximum of five numbers using if-elif.
+'''
 num1 = float(input("num1 = "))
 num2 = float(input("num2 = "))
 num3 = float(input("num3 = "))
@@ -299,3 +304,14 @@ elif(num4 > num5):
     print(f"{num4} is maximum (num4)")
 else:
     print(f"{num5} is maximum (num5)")
+'''
+#90. Check whether a given character is a hexadecimal digit.
+char = input("Enter a single character: ")
+if ("0" <= char <= "9"):
+    print("It's a hexadecimal digit.")
+elif ("A" <= char <= "F"):
+    print("It's a hexadecimal digit.")
+elif ("a" <= char <= "f"):
+    print("It's a hexadecimal digit.")
+else:
+    print("It's not a hexadecimal digit.")
