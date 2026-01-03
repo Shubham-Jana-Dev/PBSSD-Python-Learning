@@ -89,6 +89,7 @@ else:
     print("You have chosen a invalid input as the oparetor. :(")
 '''
 # 75. Check whether a triangle is right-angled, acute, or obtuse.
+'''
 a = float(input("Enter the value of first angle: "))
 b = float(input("Enter the value of second angle: "))
 c = float(input("Enter the value of third angle: "))
@@ -101,3 +102,12 @@ if ((a+b+c == 180) and a > 0 and b > 0 and c > 0):
         print("It's a Acute-Angled Triangle.")
 else:
     print("The value of the angles could not create a triangle. :(")
+'''
+#76. Check whether three sides can form a valid triangle
+a = float(input ("Enter the first value of side: "))
+b = float(input ("Enter the second value of side: "))
+c = float(input ("Enter the third value of side: "))
+if(a+b>c and b+c>a and c+a>b):
+    print("They can form a triangle. :)")
+else:
+    print("They can not create a triangle. :(")
