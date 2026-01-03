@@ -163,3 +163,28 @@ if (first_digit == last_digit):
     print("It's a palindrome number")
 else:
     print("It's not a palindrome number")
+# 81. Check whether a number is divisible by 3 or 5 but not both.
+if (num % 3 == 0 and num % 5 == 0):
+    print("Divisible by both (Not what we want)")
+elif (num % 3 == 0 or num % 5 == 0):
+    print("Divisible by 3 or 5, but not both! (Success) :)")
+else:
+    print("Not divisible by either. :(")
+# 82. Find the day of the week based on number input (1–7).
+day = int(input("Enter the number : "))
+if (day == 1):
+    print("Sunday")
+elif(day == 2):
+    print("Monday")
+elif(day == 3):
+    print("Tuesday")
+elif(day == 4):
+    print("Wednesday")
+elif(day == 5):
+    print("Thursday")
+elif(day == 6):
+    print("Friday")
+elif(day == 7):
+    print("Saturday")
+else:
+    print("Please enter in between 1 to 7")
