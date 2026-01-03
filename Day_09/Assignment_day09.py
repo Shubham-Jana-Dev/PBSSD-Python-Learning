@@ -156,6 +156,7 @@ else:
     print("Complex or Imaginary")
 '''
 # 80. Check whether a given number is a palindrome (logic-based).
+'''
 num = 121
 last_digit = num % 10
 first_digit = num // 100
@@ -163,14 +164,19 @@ if (first_digit == last_digit):
     print("It's a palindrome number")
 else:
     print("It's not a palindrome number")
+'''
 # 81. Check whether a number is divisible by 3 or 5 but not both.
+'''
+num = int(input("Enter a number: "))
 if (num % 3 == 0 and num % 5 == 0):
-    print("Divisible by both (Not what we want)")
+    print("Divisible by both ")
 elif (num % 3 == 0 or num % 5 == 0):
     print("Divisible by 3 or 5, but not both! (Success) :)")
 else:
     print("Not divisible by either. :(")
+'''
 # 82. Find the day of the week based on number input (1–7).
+'''
 day = int(input("Enter the number : "))
 if (day == 1):
     print("Sunday")
@@ -188,3 +194,18 @@ elif(day == 7):
     print("Saturday")
 else:
     print("Please enter in between 1 to 7")
+'''
+#83. Create a traffic light signal system using if-elif.
+colour = input("""enter the colour of the Traffic signal 
+               R = Red
+               Y = Yellow
+               G = Green
+- """)
+if (colour == 'R'):
+    print("Stop")
+elif(colour == 'Y'):
+    print("Look")
+elif(colour == 'G'):
+    print("Go")
+else:
+    print("Invalid input :(")
