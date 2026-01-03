@@ -231,12 +231,15 @@ else:
     print("Invalid input")
 '''
 #85. Check whether a number is positive, even, and divisible by 5.
+'''
 s = int(input("Enter the number: "))
 if (s>0 and s%2==0 and s%5==0):
     print("the number is positive, even, and divisible by 5.")
 else:
     print("number is not positive, even, and divisible by 5.")
+'''
 #86. Calculate discount based on purchase amount.
+'''
 print("""
 ₹500 to ₹1000 --> 10%
 upto ₹4000 --> 15%
@@ -257,3 +260,42 @@ elif(amount>20000):
     print("discount = ", amount *0.25)
 else:
     print("No discount :(")
+'''
+#87. Determine exam result: Pass, Compartment, or Fail.
+result = float(input("""
+------------------------------------
+<25% --> Fail :(
+25% to 30%  --> Compartment
+> 30% to 100% --> Pass
+-------------------------------------
+Enter your result's percentage:  """))
+if (0 <= result < 25):
+    print("Fail :(")
+elif(25 <= result <30):
+    print("Compertment :|")
+elif(30 <= result <= 100):
+    print("Pass :)")
+else:
+    print("Invalid input")
+#88. Check whether a number is divisible by 11 using condition.
+r = int(input("Enter the number: "))
+if (r%11 == 0):
+    print("The number is divisible by 11. :)")
+else:
+    print("The number is not divisible by 11. :(")
+#89. Find the maximum of five numbers using if-elif.
+num1 = float(input("num1 = "))
+num2 = float(input("num2 = "))
+num3 = float(input("num3 = "))
+num4 = float(input("num4 = "))
+num5 = float(input("num5 = "))
+if(num1 > num2 and num1 > num3 and num1 > num4 and num1 > num5):
+    print(f"{num1} is maximum (num1)")
+elif(num2 > num3 and num2 > num4 and num2 > num5):
+    print(f"{num2} is maximum (num2)")
+elif(num3 > num4 and num3 > num5):
+    print(f"{num3} is maximum (num3)")
+elif(num4 > num5):
+    print(f"{num4} is maximum (num4)")
+else:
+    print(f"{num5} is maximum (num5)")
