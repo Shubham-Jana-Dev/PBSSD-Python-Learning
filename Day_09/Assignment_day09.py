@@ -114,6 +114,7 @@ else:
     print("They can not create a triangle. :(")
 '''
 #77. Determine eligibility for exam based on attendance percentage.
+'''
 att = float(input("Enter the percentage of your attendance: "))
 if (att>=75 and att<=100):
     print("You are eligible for the exam. :)")
@@ -121,3 +122,21 @@ elif(0<=att<75):
     print("You are not eligible for the exam. :(")
 else:
     print("Please enter a valid input :(")
+'''
+#78. Find the quadrant of a point (x, y).
+x = float(input("Enter the value of x: "))
+y = float(input ("Enter the value of y: "))
+if (x == 0 and y != 0 ):
+    print(" It's on the Y axis")
+elif(y == 0 and x != 0 ):
+    print(" It's on the X axis")
+elif(x > 0 and y > 0):
+    print(" It's in the first quadrant.")
+elif(x > 0 and y < 0 ):
+    print(" It's in the fourth quadrant.")
+elif(x < 0 and y > 0):
+    print(" It's in the second quadrant.")
+elif(x < 0 and y < 0):
+    print(" It's in the third quadrant.")
+else:
+    print(" It's in the (0,0) point.")
