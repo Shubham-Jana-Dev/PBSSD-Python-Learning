@@ -212,6 +212,7 @@ else:
     print("Invalid input :(")
 '''
 #84. Assign employee level based on experience years.
+'''
 exp = float(input("""
 0 to 2 years	Junior 
 2 to 5 years	Intermediate 
@@ -228,3 +229,31 @@ elif(exp>=10):
     print("Lead")
 else:
     print("Invalid input")
+'''
+#85. Check whether a number is positive, even, and divisible by 5.
+s = int(input("Enter the number: "))
+if (s>0 and s%2==0 and s%5==0):
+    print("the number is positive, even, and divisible by 5.")
+else:
+    print("number is not positive, even, and divisible by 5.")
+#86. Calculate discount based on purchase amount.
+print("""
+₹500 to ₹1000 --> 10%
+upto ₹4000 --> 15%
+upto ₹8000 --> 18%         
+upto ₹20000 --> 20%
+> ₹20000 --> 25%
+""")
+amount = float(input("Enter the amount : "))
+if (500 <= amount <= 1000):
+    print("discount = ", amount * 0.1)
+elif(1000 < amount <= 4000):
+    print("discount = ", amount * 0.15)
+elif(4000 < amount <= 8000):
+    print("discount = ", amount * 0.18)
+elif(8000 < amount <=20000):
+    print("discount = ", amount * 0.2)
+elif(amount>20000):
+    print("discount = ", amount *0.25)
+else:
+    print("No discount :(")
