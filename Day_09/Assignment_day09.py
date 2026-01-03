@@ -196,6 +196,7 @@ else:
     print("Please enter in between 1 to 7")
 '''
 #83. Create a traffic light signal system using if-elif.
+'''
 colour = input("""enter the colour of the Traffic signal 
                R = Red
                Y = Yellow
@@ -209,3 +210,21 @@ elif(colour == 'G'):
     print("Go")
 else:
     print("Invalid input :(")
+'''
+#84. Assign employee level based on experience years.
+exp = float(input("""
+0 to 2 years	Junior 
+2 to 5 years	Intermediate 
+5 to 10 years	Senior
+Above 10 years	Lead                
+Enter the your experience in years: """))
+if ( 0 <= exp <2):
+    print("Junior")
+elif(2 <= exp <5):
+    print("Intermediate")
+elif(5 <= exp < 10):
+    print("Senior")
+elif(exp>=10):
+    print("Lead")
+else:
+    print("Invalid input")
