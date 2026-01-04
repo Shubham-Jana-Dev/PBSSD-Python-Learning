@@ -425,6 +425,7 @@ elif(300<time):
     print("Pay ₹ ",bill)
 '''
 #99. Validate login credentials using if-else.
+'''
 user = 'Shubham'
 password = 'raj@123'
 u = input("Enter your user name: ")
@@ -436,3 +437,27 @@ if(u == user):
         print("Incorrect password! :(")
 else:
     print("User does not exist :(")
+'''
+#100. Create a simple ATM withdrawal system using if-elif.
+balance = 50000
+cahs_lim = 20000
+pin = 34231
+amount = int(input("Enter the amount "))
+if(amount >0):
+    if(amount%100 == 0):
+        if(amount <= balance):
+            if(amount<=cahs_lim):
+                t =int(input("Enter your pin : "))
+                if(pin == t):
+                    print("Please Collect your Money ")
+                    print(f" Withdrawal amount {amount} Current balance {balance-amount}")
+                else:
+                    print("incorrect PIN! :(")
+            else:
+                print(f"Hitting Withdrawal limit, please enter amount within {cahs_lim}")
+        else:
+            print("insufficient balance! :(")
+    else:
+        print("Please enter the amount in multiple of 100")
+else:
+    print("Enter a valid amount.")
