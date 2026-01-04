@@ -358,4 +358,15 @@ if(num % d == 0 and num % e == 0):
 else:
     print(f"{num} is not divisible by both its sum of digits and the product of its digits")
 '''
-
+#94. Determine voting eligibility with nationality and age check.
+na = input("Enter 'I' if you are Indian otherwise somthing else :")
+age = float(input("Enter your age : "))
+if(na == 'I'):
+    if( 0 <= age <18):
+        print("Not Eligible for voting but you are an Indian")
+    elif(age >= 18):
+        print("Eligible for voting")
+    else:
+        print("Please enter your valid age.")
+else:
+    print("you are not eligible for voting.")
