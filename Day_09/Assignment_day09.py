@@ -326,3 +326,21 @@ if (20<=num<=40) and (35<=num<=100):
     print(f"{num} lies between both range A and B.")
 else:
     print(f"{num} does not lie between both range A and B.")
+
+# 92. Assign grades using nested if-else.
+score = float(input("Enter your score (0-100): "))
+if (score >= 0 and score <= 100):
+
+    if (score >= 90):
+        print("Grade: A")
+    else:
+        if (score >= 80):
+            print("Grade: B")
+        else:
+            if (score >= 70):
+                print("Grade: C")
+            else:
+                print("Grade: D/Fail")
+
+else:
+    print("Invalid score! Please enter a number between 0 and 100.")
