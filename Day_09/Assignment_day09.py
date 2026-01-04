@@ -398,13 +398,16 @@ else:
     print("Invalid month number")
 '''
 #97. Find the greatest number using conditional (ternary) operator.
+'''
 a = float(input("Enter first number: "))
 b = float(input("Enter second number: "))
 
 greatest = a if a > b else b
 
 print(f"The greatest number is {greatest}")
+'''
 #98. Determine phone tariff based on usage.
+'''
 time = float(input("""
 First 100 mins	Free (or low cost like ₹0.50)
 101 to 300 mins	₹0.80 per minute
@@ -420,3 +423,16 @@ elif (100 < time <= 300):
 elif(300<time):
     bill = (200)*0.8 + (time - 300)*1.20
     print("Pay ₹ ",bill)
+'''
+#99. Validate login credentials using if-else.
+user = 'Shubham'
+password = 'raj@123'
+u = input("Enter your user name: ")
+p = input("Enter your password: ")
+if(u == user):
+    if(p == password):
+        print("You are loggedin. :)")
+    else:
+        print("Incorrect password! :(")
+else:
+    print("User does not exist :(")
