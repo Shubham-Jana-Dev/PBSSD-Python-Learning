@@ -397,3 +397,26 @@ elif month == 9 or month == 10 or month == 11:
 else:
     print("Invalid month number")
 '''
+#97. Find the greatest number using conditional (ternary) operator.
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+greatest = a if a > b else b
+
+print(f"The greatest number is {greatest}")
+#98. Determine phone tariff based on usage.
+time = float(input("""
+First 100 mins	Free (or low cost like ₹0.50)
+101 to 300 mins	₹0.80 per minute
+Above 300 mins	₹1.20 per minute
+Enter your time here
+"""))
+bill = 0
+if (time <=100):
+    print("Free")
+elif (100 < time <= 300):
+    bill = (time - 100)*0.80
+    print("Pay ₹ ",bill)
+elif(300<time):
+    bill = (200)*0.8 + (time - 300)*1.20
+    print("Pay ₹ ",bill)
