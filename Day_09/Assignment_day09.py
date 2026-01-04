@@ -318,6 +318,7 @@ else:
     print("It's not a hexadecimal digit.")
 '''
 #91. Check whether a number lies in multiple ranges.
+'''
 num = float(input("""
 range A: 20 to 40
 rnage B: 35 to 100
@@ -344,3 +345,17 @@ if (score >= 0 and score <= 100):
 
 else:
     print("Invalid score! Please enter a number between 0 and 100.")
+'''
+#93. Check whether a number is divisible by both sum of digits and product of digits.
+'''
+num =12
+first_digit = num // 10
+second_digit = num % 10
+d = first_digit + second_digit 
+e = first_digit * second_digit
+if(num % d == 0 and num % e == 0):
+    print(f"{num} is divisible by both its sum of digits and the product of its digits")
+else:
+    print(f"{num} is not divisible by both its sum of digits and the product of its digits")
+'''
+
