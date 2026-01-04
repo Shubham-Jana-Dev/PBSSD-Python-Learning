@@ -359,6 +359,7 @@ else:
     print(f"{num} is not divisible by both its sum of digits and the product of its digits")
 '''
 #94. Determine voting eligibility with nationality and age check.
+'''
 na = input("Enter 'I' if you are Indian otherwise somthing else :")
 age = float(input("Enter your age : "))
 if(na == 'I'):
@@ -370,3 +371,12 @@ if(na == 'I'):
         print("Please enter your valid age.")
 else:
     print("you are not eligible for voting.")
+'''
+#95. Check whether a given time is AM or PM.
+time = float(input("Enter the time in 24 hour format: "))
+if(00.00 <= time <= 11.59):
+    print("AM")
+elif(12.00 <= time <= 23.59):
+    print("PM")
+else:
+    print("Please enter a valid time.")
