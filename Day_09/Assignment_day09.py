@@ -373,6 +373,7 @@ else:
     print("you are not eligible for voting.")
 '''
 #95. Check whether a given time is AM or PM.
+'''
 time = float(input("Enter the time in 24 hour format: "))
 if(00.00 <= time <= 11.59):
     print("AM")
@@ -380,3 +381,19 @@ elif(12.00 <= time <= 23.59):
     print("PM")
 else:
     print("Please enter a valid time.")
+'''
+#96. Determine season based on month input.
+'''
+month = int(input("Enter month number (1-12): "))
+
+if month == 12 or month == 1 or month == 2:
+    print("Winter")
+elif month == 3 or month == 4 or month == 5:
+    print("Spring")
+elif month == 6 or month == 7 or month == 8:
+    print("Summer")
+elif month == 9 or month == 10 or month == 11:
+    print("Autumn")
+else:
+    print("Invalid month number")
+'''
