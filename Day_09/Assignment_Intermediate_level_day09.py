@@ -91,7 +91,7 @@ else:
     print(f"{char} is not a alphabet.")
 '''
 #40. Check whether a student passed or failed (pass mark = 40).
-""""""
+"""
 m = float(input("Enter your marks : "))
 if(0<=m<40):
     print("Failed :(")
@@ -99,3 +99,78 @@ elif(m<=100):
     print("Passed :)")
 else:
     print("Please enter your valid marks")
+"""
+#41. Assign grade based on marks (A+,A, B, C, D, Fail).
+'''
+m = float(input("Enter your percentage fo total marks: "))
+if(0<=m<=25):
+    print("failed")
+elif(m<=45):
+    print("D")
+elif(m<=50):
+    print("C")
+elif(m<=65):
+    print("B")
+elif(m<=80):
+    print("A")
+elif(m<=100):
+    print("A+")
+else:
+    print("Please enter the valid percentage...")
+'''
+#42. Check whether a triangle is valid based on angles.
+"""
+an1 = float(input("Enter the value of the first angle: "))
+an2 = float(input("Enter the value of the second angle: "))
+an3 = float(input("Enter the value of the third angle: "))
+if(an1>0 and an2>0 and an3>0):
+    if(an1 + an2 + an3 == 180):
+        print("The triangle is valid.")
+    else:
+        print("The triangle is not valid.")
+else:
+    print("Please enter valid value angle.")
+"""
+#43. Check whether a triangle is equilateral, isosceles, or scalene.
+'''
+s1 = float(input("Enter the value of the first side: "))
+s2 = float(input("Enter the value of the second side: "))
+s3 = float(input("Enter the value of the third side: "))
+if(s1>0 and s2>0 and s3>0):
+    if(s2 + s1 > s3 and  s2 + s3 > s1 and  s1 + s3 > s2):
+        if(s1 == s2  == s3):
+            print("It's a equilatral.")
+        elif(s1 == s2  or s2 == s3  or s1 == s3 ):
+            print("It's a isosceles.")
+        else:
+            print("It's a scalene.")
+    else:
+        print("These sides cannot form a triangle.")
+
+else:
+    print("Please enter valid inputs.")
+'''
+#44. Check whether a number is divisible by 2, 3, or both.
+"""
+num = int(input("Enter the number: "))
+if(num%2 == 0):
+    if(num%3 == 0):
+        print(f"{num} is divisible by both 2 and 3.")
+    else:
+        print(f"{num} is only divisible by 2 not by 3.")
+else:
+    if(num%3 == 0):
+        print(f"{num} is only divisible by 3 not by 2.")
+    else:
+        print(f"{num} is not divisible neither 3 nor 2.")
+"""
+#45. Calculate bonus:
+# Salary ≥ 50000 → 10%
+# Salary < 50000 → 5%
+s = float(input("Enter your salary: "))
+if(0<=s<50000):
+    print("Your bonus: ",s*0.05)
+elif(s>=50000):
+    print("Your bonus: ",s*0.1)
+else:
+    print("Salary must be positive.")
