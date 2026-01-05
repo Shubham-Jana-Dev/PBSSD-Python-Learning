@@ -14,3 +14,5 @@ print(a,type(a))
 
 # but one thisng 
 # c = int(x)
+# it would not be Executed.
+# Because we cannot type cast complex variable into integer without breaking it into real imaginary.
