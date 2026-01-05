@@ -439,6 +439,7 @@ else:
     print("User does not exist :(")
 '''
 #100. Create a simple ATM withdrawal system using if-elif.
+'''
 balance = 50000
 cahs_lim = 20000
 pin = 34231
@@ -461,3 +462,4 @@ if(amount >0):
         print("Please enter the amount in multiple of 100")
 else:
     print("Enter a valid amount.")
+'''
