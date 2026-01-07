@@ -1,9 +1,11 @@
+print("--------02--------")
 # Explicit type casting
 x = 16.4
 print(x,type(x))
 y = int(x)
 print(y,type(y))
 # Explicit type casting of the complex numbers
+print("--------02--------")
 c = 13 + 43j
 print(c)
 print(type(c))
