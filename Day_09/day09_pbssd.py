@@ -49,7 +49,7 @@ else:
     print("It's a special charecter")
 '''
 # build multi-functional calculator with zero-division protection
-'''
+#'''
 x = int(input("Enter the number: "))
 y = int(input("Enter the number: "))
 opareter = input("chose the opareter (+,-,*,/,%):-")
@@ -68,7 +68,7 @@ elif(opareter == '%'):
     print(f"{x} % {y} = ",x%y)
 else:
     print("please chose between +,-,*,/,%")
-'''
+#'''
 '''
 Calculate the electric bill amount-
 0 unit --> 15 unit = ₹6.20/unit
