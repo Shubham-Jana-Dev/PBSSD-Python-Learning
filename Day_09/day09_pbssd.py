@@ -7,6 +7,7 @@ else:
     print("It's a charecter")
 '''
 # positive/negative even/odd analysis
+'''
 x = int(input("Enter number:-"))
 if(x>=0):
     if(x%2 == 0):
@@ -18,3 +19,12 @@ else:
         print("Nagetive and even")
     else:
         print("Nagetive and odd")
+'''
+# character classification
+'''
+char = input("Enter alfabet:-")
+if char >= 'A' and char <= 'Z':
+    print("Uper case")
+else:
+    print("Lower case")
+'''
