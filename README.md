@@ -143,6 +143,22 @@ Python allows representing integers in four different bases:
 * **`dict()`:** Requires specific structures (Key-Value pairs). Cannot cast single numeric literals to a dictionary.
 
 > **Note:** Today's session was highly motivational, focusing on the "Immortal support" provided by our mentor to master these foundational logic steps.
+---
+## 🗓️ Day 08: Logic & Computer Arithmetic
+**Focus:** Explicit Casting, Number Compliments, and Decision Control.
+
+### 1. Radix Compliments ($r$'s and $r-1$'s)
+* Explored 2's, 7's, and 8's compliments for digital representation.
+* These are essential for understanding how the CPU handles negative numbers and subtraction.
+
+### 2. Explicit Type Casting (Narrowing)
+* **Definition:** Storing a larger data type into a smaller one manually.
+* **Risk:** Data loss (e.g., `15.7` becomes `15`).
+* **Responsibility:** Manually handled by the developer.
+
+### 3. Control Flow (Decision Making)
+* Introduced the `if` statement to control the **Runtime Environment**.
+* **Indentation:** Learned that Python uses indentation to define the "body" of a block.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
@@ -175,7 +191,10 @@ PBSSD-PYTHON-LEARNING/
 │   ├── day05_pbssd.py         # Scope & Memory Stack
 ├── Day_06/
 │   └── day06_pbssd.py
-         # Literals & Number Systems
+├── Day_07/
+│   └── day07_pbssd.py
+├── Day_08/
+│   └── day08_pbssd.py
 ├── .gitignore                 # Files to exclude from Git
 ├── LICENSE                    # Project License
 └── README.md                  # Project Documentation
