@@ -130,6 +130,19 @@ Python allows representing integers in four different bases:
 * **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
 * **Casting Rules:** * `complex -> str`: ✅ Possible.
     * `complex -> int/float`: ❌ Raises `TypeError`.
+---
+## 🗓️ Day 07: Type Casting (Widening & Narrowing)
+**Focus:** Implicit vs. Explicit conversion and Collection Casting.
+
+### 1. Casting Types
+* **Implicit (Up-casting):** Small type to Large type (e.g., `int` -> `float`). Handled by PVM. No data loss.
+* **Explicit (Down-casting):** User-defined conversion using functions. Potential for data loss.
+
+### 2. Collection Conversions
+* **`set()`:** Useful for removing duplicates from a `list` or `string`.
+* **`dict()`:** Requires specific structures (Key-Value pairs). Cannot cast single numeric literals to a dictionary.
+
+> **Note:** Today's session was highly motivational, focusing on the "Immortal support" provided by our mentor to master these foundational logic steps.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
@@ -137,7 +150,6 @@ Practiced defining complex numbers using scientific notation:
 x = -34e3 + (-45.6e3j) # Handling large-scale complex data
 
 ### 📝 Example Snippet: f-Strings
-```python
 name = "Shubham Jana"
 address = "Kolkata"
 print(f"Name of the person is {name}")
