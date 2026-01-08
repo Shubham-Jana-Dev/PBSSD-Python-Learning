@@ -127,7 +127,7 @@ address = "Kolkata"
 print(f"Name of the person is {name}")
 print(f"Address of {name} is {address}")
 
-
+---
 ## 🗓️ Day 06: Complex Literals & Bitwise Foundations
 **Date:** December 27, 2025  
 **Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
@@ -144,8 +144,22 @@ Practiced defining complex numbers using scientific notation:
 ```python
 x = -34e3 + (-45.6e3j) # Handling large-scale complex data
 
+---
+## 🗓️ Day 06: Complex Literals & Bitwise Foundations
+**Date:** December 27, 2025  
+**Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
 
--
+### 1. Complex Literals & Components
+* **Structure:** `x = real + imag j`
+* **Observation:** The components `.real` and `.imag` always return **float** values.
+* **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
+* **Casting Rules:** * `complex -> str`: ✅ Possible.
+    * `complex -> int/float`: ❌ Raises `TypeError`.
+
+### 2. Scientific & Exponential Complex Literals
+Practiced defining complex numbers using scientific notation:
+```python
+x = -34e3 + (-45.6e3j) # Handling large-scale complex data
 
 ## 📂 Repository Structure
 ## 📂 Repository Structure
