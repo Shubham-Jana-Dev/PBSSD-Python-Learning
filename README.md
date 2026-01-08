@@ -159,6 +159,25 @@ Python allows representing integers in four different bases:
 ### 3. Control Flow (Decision Making)
 * Introduced the `if` statement to control the **Runtime Environment**.
 * **Indentation:** Learned that Python uses indentation to define the "body" of a block.
+---
+## 🗓️ Day 09: Decision Making - if, else, and elif
+**Topic:** Branching Logic and Nested Conditionals.
+
+### 1. Theory of Choice
+* **if-else:** Used for "Either/Or" decisions (Binary choices).
+* **if-elif-else:** Used for sequential condition checking (Multiple exclusive paths).
+* **Nesting:** Placing an `if` inside another `if` to handle multi-layered logic (e.g., checking if a number is positive AND even).
+
+
+
+### 2. Practical Projects
+* **Advanced Calculator:** Handles `+`, `-`, `*`, `/`, `%` with error handling for zero-division.
+* **Character Classifier:** Uses string comparison logic to detect Uppercase, Lowercase, and Numeric digits.
+* **Tiered Billing System:** A complex script calculating electricity costs based on usage units, utilizing nested ranges for precision.
+
+### 💡 Engineering Insight
+In the Electricity Bill problem, I learned that the **order of conditions** matters significantly in an `if-elif` ladder. Python stops at the first `True` condition it finds, so precision in range-setting is vital.
+
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
