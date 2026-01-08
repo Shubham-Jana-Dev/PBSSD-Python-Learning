@@ -119,6 +119,22 @@ Python allows representing integers in four different bases:
 * **Type Casting:** * `float(ord('a'))`: Converting ASCII integers to floating-point numbers.
     * `int(float_value)`: Handling conversions between decimal and whole numbers.
 * **Base Functions:** Verification of manual Hex/Octal math using built-in `hex()` and `oct()`.
+---
+## 🗓️ Day 06: Complex Literals & Bitwise Foundations
+**Date:** December 27, 2025  
+**Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
+
+### 1. Complex Literals & Components
+* **Structure:** `x = real + imag j`
+* **Observation:** The components `.real` and `.imag` always return **float** values.
+* **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
+* **Casting Rules:** * `complex -> str`: ✅ Possible.
+    * `complex -> int/float`: ❌ Raises `TypeError`.
+
+### 2. Scientific & Exponential Complex Literals
+Practiced defining complex numbers using scientific notation:
+```python
+x = -34e3 + (-45.6e3j) # Handling large-scale complex data
 
 ### 📝 Example Snippet: f-Strings
 ```python
@@ -127,41 +143,8 @@ address = "Kolkata"
 print(f"Name of the person is {name}")
 print(f"Address of {name} is {address}")
 
----
-## 🗓️ Day 06: Complex Literals & Bitwise Foundations
-**Date:** December 27, 2025  
-**Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
 
-### 1. Complex Literals & Components
-* **Structure:** `x = real + imag j`
-* **Observation:** The components `.real` and `.imag` always return **float** values.
-* **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
-* **Casting Rules:** * `complex -> str`: ✅ Possible.
-    * `complex -> int/float`: ❌ Raises `TypeError`.
 
-### 2. Scientific & Exponential Complex Literals
-Practiced defining complex numbers using scientific notation:
-```python
-x = -34e3 + (-45.6e3j) # Handling large-scale complex data
-
----
-## 🗓️ Day 06: Complex Literals & Bitwise Foundations
-**Date:** December 27, 2025  
-**Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
-
-### 1. Complex Literals & Components
-* **Structure:** `x = real + imag j`
-* **Observation:** The components `.real` and `.imag` always return **float** values.
-* **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
-* **Casting Rules:** * `complex -> str`: ✅ Possible.
-    * `complex -> int/float`: ❌ Raises `TypeError`.
-
-### 2. Scientific & Exponential Complex Literals
-Practiced defining complex numbers using scientific notation:
-```python
-x = -34e3 + (-45.6e3j) # Handling large-scale complex data
-
-## 📂 Repository Structure
 ## 📂 Repository Structure
 
 PBSSD-PYTHON-LEARNING/
@@ -178,7 +161,8 @@ PBSSD-PYTHON-LEARNING/
 │   └── day04_pbssd.py
 ├── Day_05/
 │   ├── day05_pbssd.py         # Scope & Memory Stack
-│   └── Assignment_day03.py    # 12 Logic-based math scripts
+├── Day_06/
+│   └── day06_pbssd.py
          # Literals & Number Systems
 ├── .gitignore                 # Files to exclude from Git
 ├── LICENSE                    # Project License
