@@ -178,6 +178,25 @@ Python allows representing integers in four different bases:
 ### 💡 Engineering Insight
 In the Electricity Bill problem, I learned that the **order of conditions** matters significantly in an `if-elif` ladder. Python stops at the first `True` condition it finds, so precision in range-setting is vital.
 
+---
+## 🗓️ Day 10: Iterative Statements (The while Loop)
+**Topic:** Automating repetitive tasks using conditional loops.
+
+### 1. Theory of Iteration
+* **Definition:** Iterative statements are used to execute a block of code repeatedly.
+* **The `while` Loop:** Best used when the number of iterations is **not known in advance**. The loop runs as long as the argument/parameter remains `True`.
+
+
+
+### 2. Logic Implementation
+* **Factorial Calculation:** Using a decrementing `while` loop to multiply a sequence of numbers down to 1.
+* **Range Analysis:** A sophisticated script that:
+    1. Iterates through a user-defined range.
+    2. Uses modulo logic to categorize numbers as Even or Odd.
+    3. Maintains counters and running sums for both categories.
+
+### 📝 B.Tech Student Note
+In iterative logic, the **Update Statement** (like `temp -= 1` or `x += 1`) is the most important part. Without it, the loop becomes an "Infinite Loop," which can crash the runtime environment.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
