@@ -15,3 +15,12 @@ while x <= y:
     x += 1  
 print(f"Total Even: {no_even}, Sum: {sum_even}")
 print(f"Total Odd: {no_odd}, Sum: {sum_odd}")
+
+
+x = int(input("Enter the number: "))
+fact = 1
+temp = x
+while temp > 0:
+    fact *= temp
+    temp -= 1
+print(f"The factorial of {x} is {fact}")
