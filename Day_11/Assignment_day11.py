@@ -11,7 +11,7 @@ print(rev_num)
 """
 # 2) python Program to convert Number to Word
 # 2) Python Program to convert Number to Word (Mathematical Method)
-
+'''
 num = int(input("Enter the number: "))
 
 # Handle the special case for 0 immediately
@@ -59,3 +59,20 @@ else:
         # Prepare for next digit
         rev_num //= 10
         processed_count += 1
+'''
+# 3) Automorphic Number Program in python
+"""
+num = int(input("Enter the number: "))
+temp = num
+count = 0
+sq = num**2
+while temp != 0:
+    temp  //= 10 
+    count += 1
+print(count)
+div = 10**count
+if sq%div == num:
+    print("It's a Automorphic number")
+else:
+    print("It's not a Automorphic number")
+"""
