@@ -1,4 +1,5 @@
 # --- Armstrong Number Logic ---
+"""
 num = int(input("Enter the number: "))
 temp1 = num
 temp2 = num 
@@ -15,3 +16,9 @@ if total_sum == num: # Fixed: use == for comparison
     print(f"{num} is an Armstrong number")
 else:
     print(f"{num} is NOT an Armstrong number")
+"""
+# --- Range & For Loop Experiments ---
+print("\n--- Range Experiments ---")
+# m = starting value, n = ending value
+for i in range(1, 5): 
+    print(i) # Prints 1, 2, 3, 4
