@@ -77,6 +77,7 @@ else:
     print("It's not a Automorphic number")
 """
 # 4) Peterson Number in python
+'''
 num = int(input("Enter the number: "))
 temp = num
 last_digit = 0
@@ -95,3 +96,17 @@ if total_sum == num:
     print("Peterson Number")
 else:
     print("Not a Peterson Number")
+'''
+# 5) Sunny Number in python
+num = int(input("Enter the number: "))
+n = num + 1
+i =1
+found = False
+while i * i <= n:
+    if i * i == n:
+        found = True
+    i += 1
+if found:
+    print(f"{num} is a sunny number.")
+else:
+    print(f"{num} is not a sunny number.")
