@@ -186,7 +186,26 @@ In the Electricity Bill problem, I learned that the **order of conditions** matt
 * **Definition:** Iterative statements are used to execute a block of code repeatedly.
 * **The `while` Loop:** Best used when the number of iterations is **not known in advance**. The loop runs as long as the argument/parameter remains `True`.
 
+## 🗓️ Day 12: Armstrong Numbers & For-Loop Iterators
+**Topic:** Digit logic, Indexing, and Range-based iteration.
 
+### (*_*) What is an Armstrong Number?
+A number is an **Armstrong number** if the sum of its own digits each raised to the power of the number of digits equals the number itself. 
+*Example:* $153$ ($3$ digits): $1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153$.
+
+
+
+### (*_*) Iteration: The `for` Loop
+* **Purpose:** Used when the number of executions is known in advance.
+* **Stream Processing:** Python treats sequences (strings, lists, ranges) as streams of data starting at **index 0**.
+
+### (*_*) The `range()` Function
+* `range(n)`: Starts at 0, ends at n-1.
+* `range(m, n)`: Starts at m, ends at n-1.
+* `range(m, n, -1)`: Reverse iteration.
+
+### (*_*) Sneak Peek: Functions (`def`)
+* Introduced the concept of **Reusability**. Using `return` to pass values back from a logic block.
 
 ### 2. Logic Implementation
 * **Factorial Calculation:** Using a decrementing `while` loop to multiply a sequence of numbers down to 1.
