@@ -18,7 +18,12 @@ else:
     print(f"{num} is NOT an Armstrong number")
 """
 # --- Range & For Loop Experiments ---
+'''
 print("\n--- Range Experiments ---")
 # m = starting value, n = ending value
 for i in range(1, 5): 
     print(i) # Prints 1, 2, 3, 4
+'''
+# Boolean/Zero ranges (These won't print anything as range is empty)
+for I in range(False): # range(0)
+    print("This won't show")
