@@ -9,7 +9,7 @@ while temp != 0:
     temp //= 10
 print(rev_num)
 """
-# 2) python Program to convert Number to Word
+
 # 2) Python Program to convert Number to Word (Mathematical Method)
 '''
 num = int(input("Enter the number: "))
@@ -76,3 +76,22 @@ if sq%div == num:
 else:
     print("It's not a Automorphic number")
 """
+# 4) Peterson Number in python
+num = int(input("Enter the number: "))
+temp = num
+last_digit = 0
+total_sum = 0
+
+while temp>0:
+    last_digit = temp%10
+    f = 1
+    fact = 1
+    while f<=last_digit:
+        fact = fact * f
+        f += 1
+    total_sum += fact
+    temp //= 10
+if total_sum == num:
+    print("Peterson Number")
+else:
+    print("Not a Peterson Number")
