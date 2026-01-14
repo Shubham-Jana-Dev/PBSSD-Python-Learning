@@ -24,6 +24,17 @@ print("\n--- Range Experiments ---")
 for i in range(1, 5): 
     print(i) # Prints 1, 2, 3, 4
 '''
+# Reverse Step
+for i in range(5, 1, -1):
+    print(f"Counting down: {i}")
+
 # Boolean/Zero ranges (These won't print anything as range is empty)
 for I in range(False): # range(0)
     print("This won't show")
+
+# Summing a range
+x, y = 10, 20
+total = 0
+for i in range(x, y):
+    total += i
+print(f"Sum of range {x} to {y} is: {total}")
