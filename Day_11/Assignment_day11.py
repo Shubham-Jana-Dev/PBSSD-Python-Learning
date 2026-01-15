@@ -112,7 +112,19 @@ if found:
 else:
     print(f"{num} is not a sunny number.")
 """
+# OR, other method 
+
+count =0
+for i in range (1,1001):
+    n=i +1
+    root =n **0.5
+    rr = int(root)
+    sq = rr**2
+    if sq == n:
+        count += 1
+print(count)
 # 6) Tech Number in python
+"""
 num = int(input("Enter the number: "))
 temp = num
 count = 0
@@ -131,3 +143,4 @@ if count%2 == 0:
         print(f"{num} is not a tech number :(")
 else:
     print(f"{num} has odd digits, so it cannot be a tech number.")
+"""
