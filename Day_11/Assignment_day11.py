@@ -98,6 +98,7 @@ else:
     print("Not a Peterson Number")
 '''
 # 5) Sunny Number in python
+"""
 num = int(input("Enter the number: "))
 n = num + 1
 i =1
@@ -110,3 +111,23 @@ if found:
     print(f"{num} is a sunny number.")
 else:
     print(f"{num} is not a sunny number.")
+"""
+# 6) Tech Number in python
+num = int(input("Enter the number: "))
+temp = num
+count = 0
+while temp != 0:
+    temp //= 10
+    count +=1
+
+if count%2 == 0:
+    spliter = 10**(count//2)
+    left_half = num // spliter
+    right_half = num % spliter
+    total_sum = left_half + right_half
+    if total_sum ** 2 == num:
+        print(f"{num} is a tech number :)")
+    else:
+        print(f"{num} is not a tech number :(")
+else:
+    print(f"{num} has odd digits, so it cannot be a tech number.")
