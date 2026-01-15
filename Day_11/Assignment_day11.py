@@ -113,7 +113,7 @@ else:
     print(f"{num} is not a sunny number.")
 """
 # OR, other method 
-
+'''
 count =0
 for i in range (1,1001):
     n=i +1
@@ -123,6 +123,7 @@ for i in range (1,1001):
     if sq == n:
         count += 1
 print(count)
+'''
 # 6) Tech Number in python
 """
 num = int(input("Enter the number: "))
