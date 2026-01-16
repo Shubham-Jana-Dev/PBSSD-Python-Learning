@@ -15,6 +15,7 @@
 #Rapid Application Development File
 rad.json
 rough.txt
+rough.py
 #Translation Base-file
 *.g.xlf
 #License-file
