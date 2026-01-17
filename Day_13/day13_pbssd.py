@@ -38,7 +38,7 @@ if x<y:
             rem = temp%10
             rev = rev * 10 + rem
             temp //=10
-            if( rev == i):
+        if( rev == i):
                 print(i) 
 """
 # Check a number is amstrong numbner or not.
