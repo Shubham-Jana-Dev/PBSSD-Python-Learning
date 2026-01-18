@@ -239,6 +239,29 @@ By treating the loop variables `i` (rows) and `j` (columns) as coordinates, I im
 
 ### ✨ The "Curiosity" Zone
 My favorite implementation today was combining boundary logic with mid-point logic `(i == (t+1)/2)` to create complex symmetrical grids.
+---
+## 🗓️ Day 14: Matrix Operations & Coordinate Mapping
+**Topic:** Numerical matrices, 2D searching, and advanced conditional patterns.
+
+### 1. Matrix Numerical Logic
+Today I explored different mathematical ways to fill a $N \times N$ matrix:
+* **Natural Sequential:** Incrementing a counter for a row-major fill.
+* **Product Matrix:** `i * j` for a multiplication table format.
+* **Offset Logic:** `i + j` to create shifting numerical patterns.
+* **Column-Major Fill:** Using `i + (j * rg)` to fill data vertically instead of horizontally.
+
+
+
+### 2. Searching in 2D
+I implemented a search algorithm that scans the generated matrix for a target value.
+* **Feature:** If found, the program returns the **Coordinate Pair** $(x, y)$.
+* **Logic:** Using a "found" flag to handle cases where the target is missing.
+
+### 3. Advanced Pattern Coordinates
+Using the `(*_*)` logic to map specific points:
+* **Hollow Square with Diagonals:** `(i == j) or (i + j == Range + 1) or (i == 1) or (j == 1)...`
+* **The Plus Sign:** Using mid-point calculation `(Rg + 1) / 2`.
+* **The "Star-in-a-Box":** A combination of boundary, diagonal, and mid-point conditions.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
