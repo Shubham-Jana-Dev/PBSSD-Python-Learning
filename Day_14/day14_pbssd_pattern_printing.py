@@ -144,3 +144,148 @@ for i in range(1,Range+1):
         print(i," ",end=" ")
     print(" ")
 '''
+# Class Work 
+"""
+5       10      15      20      25       
+30      35      40      45      50       
+55      60      65      70      75       
+80      85      90      95      100      
+105     110     115     120     125 
+"""
+"""
+ran = int(input("Enter the size of Matrix: "))
+x = 5
+for i in range(1,ran+1):
+    for j in range(1,ran+1):
+        print(x," ",end="\t")
+        x += 5
+    print(" ")
+"""
+# 
+'''
+1 1              
+2 1     2 2            
+3 1     3 2     3 3          
+4 1     4 2     4 3     4 4        
+5 1     5 2     5 3     5 4     5 5 
+'''
+'''
+ran = int(input("Enter the range: "))
+for i in range(1,ran+1):
+    for j in range(1,ran+1):
+        if i>=j:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end=" ")
+    print(" ")
+'''
+# 
+"""
+                                1 5      
+                        2 4     2 5      
+                3 3     3 4     3 5      
+        4 2     4 3     4 4     4 5      
+5 1     5 2     5 3     5 4     5 5 
+"""
+"""
+rna = int(input("Enter the range: "))
+for i in range(1,rna+1):
+    for j in range(1,rna+1):
+        if i+j >= rna +1:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+"""
+# 
+"""
+1 1     1 2     1 3     1 4     1 5      
+2 1     2 2     2 3     2 4              
+3 1     3 2     3 3                      
+4 1     4 2                              
+5 1                                  
+"""
+"""
+rna = int(input("Enter the range: "))
+for i in range(1,rna+1):
+    for j in range(1,rna+1):
+        if i+j <= rna +1:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+"""
+#
+'''
+1 1     1 2     1 3     1 4     1 5      
+        2 2     2 3     2 4     2 5      
+                3 3     3 4     3 5      
+                        4 4     4 5      
+                                5 5   
+'''
+'''
+rna = int(input("Enter the range: "))
+for i in range(1,rna+1):
+    for j in range(1,rna+1):
+        if i <= j:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+'''
+"""
+1 1     1 2     1 3     1 4     1 5      
+        2 2                     2 5      
+                3 3             3 5      
+                        4 4     4 5      
+                                5 5 
+"""
+"""
+rna = int(input("Enter the range: "))
+for i in range(1,rna+1):
+    for j in range(1,rna+1):
+        if i == j or i ==1 or j == rna:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+"""
+'''
+1 1     1 2     1 3     1 4     1 5      
+2 1     2 2                     2 5      
+3 1             3 3             3 5      
+4 1                     4 4     4 5      
+5 1     5 2     5 3     5 4     5 5 
+'''
+'''
+Range = int(input("Enter the range: "))
+for i in range(1,Range+1):
+    for j in range(1,Range+1):
+        if i == j or i ==1 or j == 1 or i == Range or j == Range:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+'''
+"""
+1 1     1 2     1 3     1 4     1 5     1 6     1 7     1 8     1 9     1 10     
+2 1     2 2                                                     2 9     2 10     
+3 1             3 3                                     3 8             3 10     
+4 1                     4 4                     4 7                     4 10     
+5 1                             5 5     5 6                             5 10     
+6 1                             6 5     6 6                             6 10     
+7 1                     7 4                     7 7                     7 10     
+8 1             8 3                                     8 8             8 10     
+9 1     9 2                                                     9 9     9 10     
+10 1    10 2    10 3    10 4    10 5    10 6    10 7    10 8    10 9    10 10 
+"""
+"""
+Range = int(input("Enter the range: "))
+for i in range(1,Range+1):
+    for j in range(1,Range+1):
+        if (i == j) or (j+i == Range+1) or (i == 1) or (j == 1) or (i == Range) or (j == Range):
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+"""
