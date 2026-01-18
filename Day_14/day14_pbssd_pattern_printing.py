@@ -233,6 +233,7 @@ for i in range(1,rna+1):
             print(" ",end="\t")
     print(" ")
 '''
+#
 """
 1 1     1 2     1 3     1 4     1 5      
         2 2                     2 5      
@@ -250,6 +251,7 @@ for i in range(1,rna+1):
             print(" ",end="\t")
     print(" ")
 """
+#
 '''
 1 1     1 2     1 3     1 4     1 5      
 2 1     2 2                     2 5      
@@ -267,6 +269,7 @@ for i in range(1,Range+1):
             print(" ",end="\t")
     print(" ")
 '''
+#
 """
 1 1     1 2     1 3     1 4     1 5     1 6     1 7     1 8     1 9     1 10     
 2 1     2 2                                                     2 9     2 10     
@@ -289,3 +292,63 @@ for i in range(1,Range+1):
             print(" ",end="\t")
     print(" ")
 """
+#
+'''
+1 1                                      
+2 1     2 2                              
+3 1             3 3                      
+4 1                     4 4              
+5 1     5 2     5 3     5 4     5 5
+'''
+'''
+Rg = int(input("Enter the range: "))
+for i in range(1,Rg+1):
+    for j in range(1,Rg+1):
+        if j == 1 or  i == j or i == Rg: 
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
+'''
+#
+"""
+                1 3                      
+                2 3                      
+3 1     3 2     3 3     3 4     3 5      
+                4 3                      
+                5 3                  
+"""
+"""
+Rg = int(input("Enter the range: "))
+for i in range(1,Rg+1):
+    for j in range(1,Rg+1):
+        if i == (Rg+1)/2 or j == (Rg+1)/2:
+            print(i,j," ",end="\t")
+        else:
+            
+            print(" ",end="\t")
+    print(" ")
+"""
+#
+'''
+1 1                                     1 6                                     1 11     
+        2 2                             2 6                             2 10             
+                3 3                     3 6                     3 9                      
+                        4 4             4 6             4 8                              
+                                5 5     5 6     5 7                                      
+6 1     6 2     6 3     6 4     6 5     6 6     6 7     6 8     6 9     6 10    6 11     
+                                7 5     7 6     7 7                                      
+                        8 4             8 6             8 8                              
+                9 3                     9 6                     9 9                      
+        10 2                            10 6                            10 10            
+11 1                                    11 6                                    11 11    
+
+'''
+gg = int(input("Enter the range (Odd number plz): "))
+for i in range(1,gg+1):
+    for j in range(1,gg+1):
+        if j==i or i+j == gg+1 or j == (gg+1)/2 or i == (gg+1)/2:
+            print(i,j," ",end="\t")
+        else:
+            print(" ",end="\t")
+    print(" ")
