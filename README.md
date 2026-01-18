@@ -216,6 +216,29 @@ A number is an **Armstrong number** if the sum of its own digits each raised to 
 
 ### 📝 B.Tech Student Note
 In iterative logic, the **Update Statement** (like `temp -= 1` or `x += 1`) is the most important part. Without it, the loop becomes an "Infinite Loop," which can crash the runtime environment.
+---
+## 🗓️ Day 13: Nested Loops & Pattern Geometry
+**Topic:** Coordinate-based iteration and range-bound algorithms.
+
+### 1. Range Algorithms
+* **Factorials in Range:** Calculating $n!$ for every integer in a user-defined interval.
+* **Palindrome & Armstrong Ranges:** Implementing nested logic to filter numbers that satisfy specific symmetry or power-sum properties across large data sets.
+
+
+
+### 2. Nested Loop Theory: The "Clock Hand" Model
+* **Outer Loop:** Acts like the hour hand (moves once per full cycle of the inner loop).
+* **Inner Loop:** Acts like the minute hand (completes all iterations for every single step of the outer loop).
+
+### 3. Pattern Printing (Logic Matrix)
+By treating the loop variables `i` (rows) and `j` (columns) as coordinates, I implemented the following geometric logic:
+* **Left Triangle:** `if i >= j`
+* **Right Triangle:** `if i + j >= r + 1`
+* **Diagonal (X-Shape):** `if i == j or i + j == r + 1`
+* **Hollow Square:** `if i == 1 or j == 1 or i == r or j == r`
+
+### ✨ The "Curiosity" Zone
+My favorite implementation today was combining boundary logic with mid-point logic `(i == (t+1)/2)` to create complex symmetrical grids.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
