@@ -344,6 +344,7 @@ for i in range(1,Rg+1):
 11 1                                    11 6                                    11 11    
 
 '''
+'''
 gg = int(input("Enter the range (Odd number plz): "))
 for i in range(1,gg+1):
     for j in range(1,gg+1):
@@ -352,3 +353,4 @@ for i in range(1,gg+1):
         else:
             print(" ",end="\t")
     print(" ")
+'''
