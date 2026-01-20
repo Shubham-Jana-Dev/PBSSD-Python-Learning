@@ -262,6 +262,22 @@ Using the `(*_*)` logic to map specific points:
 * **Hollow Square with Diagonals:** `(i == j) or (i + j == Range + 1) or (i == 1) or (j == 1)...`
 * **The Plus Sign:** Using mid-point calculation `(Rg + 1) / 2`.
 * **The "Star-in-a-Box":** A combination of boundary, diagonal, and mid-point conditions.
+---
+## 🗓️ Day 15: Geometric Logic & Advanced Pattern Design
+**Topic:** Multi-conditional logic and coordinate-based region filling.
+
+### (*_*) The Logic of Lines
+Today I focused on combining multiple diagonal and boundary conditions to create specific visual structures:
+* **The "N" Shape:** `j == 1 or j == Rg or j == i`
+* **The "Z" Shape:** `i == 1 or i == Rg or i + j == Rg + 1`
+* **The "Hourglass in a Box":** Combining `i == 1`, `i == f`, and diagonal conditions with range limits (e.g., `i >= j` and `i + j >= f + 1`).
+
+
+
+### (*_*) Key Insights for B.Tech Logic
+1. **Vertical vs. Horizontal:** `i` controls the Row (Horizontal lines), `j` controls the Column (Vertical lines).
+2. **The "Shadow" Effect:** Using inequalities like `j >= i` or `i + j <= t + 1` allows us to fill whole sections of the matrix, creating solid triangles instead of just thin lines.
+3. **The Center Point:** Learned that for perfect symmetry, `(f + 1) / 2` works best with odd-numbered ranges.
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
