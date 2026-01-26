@@ -105,7 +105,7 @@ print(School_name)
 # A lambda function does not need a return statment....
 '''
 syntax : 
-variable_name = lanmbda parametes: expression
+variable_name = lambda parametes: expression
 '''
 dubb = lambda x: x*2
 print(dubb(3)) # using a single paramerter
