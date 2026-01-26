@@ -272,12 +272,36 @@ Today I focused on combining multiple diagonal and boundary conditions to create
 * **The "Z" Shape:** `i == 1 or i == Rg or i + j == Rg + 1`
 * **The "Hourglass in a Box":** Combining `i == 1`, `i == f`, and diagonal conditions with range limits (e.g., `i >= j` and `i + j >= f + 1`).
 
-
-
 ### (*_*) Key Insights for B.Tech Logic
 1. **Vertical vs. Horizontal:** `i` controls the Row (Horizontal lines), `j` controls the Column (Vertical lines).
 2. **The "Shadow" Effect:** Using inequalities like `j >= i` or `i + j <= t + 1` allows us to fill whole sections of the matrix, creating solid triangles instead of just thin lines.
 3. **The Center Point:** Learned that for perfect symmetry, `(f + 1) / 2` works best with odd-numbered ranges.
+---
+## 🗓️ Day 16: Functions & Functional Programming
+**Topic:** Reusability, Parameterized Functions, and Lambda Expressions.
+
+### 1. Function Types
+* **Built-in:** Functions like `print()`, `len()`, and `range()` provided by Python.
+* **User-Defined:** Custom logic blocks created using the `def` keyword.
+
+
+
+### 2. Core Concepts
+* **Parameters & Arguments:** Passing data into functions (e.g., `name`, `age`).
+* **The `return` Statement:** Sending processed data back to the caller.
+* **`pass` Keyword:** A placeholder for future code, preventing indentation errors during development.
+
+### 3. Anonymous (Lambda) Functions
+I explored the unique syntax of **Lambda functions**:
+* **Syntax:** `variable = lambda parameters: expression`
+* **Features:** Single-line execution, no explicit return needed, can handle multiple parameters.
+
+### 4. Higher-Order Functions
+Implemented logic where a function acts as a "tool" passed into another function:
+```python
+# Passing 'square' function as an argument to 'transform_list'
+def transform_list(num_list, transform_items):
+    return [transform_items(num_list[0]), transform_items(num_list[1])]
 
 ### 2. Scientific & Exponential Complex Literals
 Practiced defining complex numbers using scientific notation:
