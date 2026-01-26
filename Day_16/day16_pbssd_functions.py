@@ -39,7 +39,7 @@ def calculator():
 calculator()
 '''
 # another way
-
+"""
 first_number = int(input("Enter the first number: "))
 second_number = int(input("Enter the second number: "))
 operator = input("Enter the operator (one of these '+','-','*','/' and '%'): " )
@@ -68,5 +68,11 @@ elif operator == '/':
         print("Any number can not divisible by ZERO :(")
 else:
     print("Enter a valid operator :(")
-
+"""
+def happy_birth_day(name,age):
+    print(f"Happy Birth day {name}")
+    print(f"Now you are {age} years old.")
+happy_birth_day("Shubham",19)
+happy_birth_day("Rahul",21)
+happy_birth_day("Shanvi",-10) # future kid not a bug
     
