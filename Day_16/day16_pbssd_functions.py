@@ -69,10 +69,25 @@ elif operator == '/':
 else:
     print("Enter a valid operator :(")
 """
+'''
 def happy_birth_day(name,age):
     print(f"Happy Birth day {name}")
     print(f"Now you are {age} years old.")
 happy_birth_day("Shubham",19)
 happy_birth_day("Rahul",21)
-happy_birth_day("Shanvi",-10) # future kid not a bug
-    
+'''
+# returning string
+def My_name(first_name,last_name):
+    first_name =first_name.capitalize()
+    last_name = last_name.capitalize()
+    return first_name + " " + last_name
+full_name = My_name("Shubham","Jana")
+print(full_name)
+bros_name = My_name("Rahul","Roy")
+print(bros_name)
+Course_name = My_name("B.tech","in CSE")
+print(Course_name)
+def calculate_school_fees(amount,time):   # the pass keyword do nothing inside a function we use it just because to use the function later.
+    pass
+School_name = My_name("La","Martinieres for boys")
+print(School_name)
