@@ -226,7 +226,6 @@ def pattern_16():
 9       11      13      15      17      
 """
 def pattern_17():
-    y = 0
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(0,x):
@@ -241,7 +240,6 @@ def pattern_17():
 0 1 0 1 0 
 """
 def pattern_18():
-    y = 1
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(1,x+1):
@@ -259,7 +257,6 @@ def pattern_18():
 1 0 1 0 1  
 """
 def pattern_19():
-    y = 1
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(1,x+1):
@@ -277,7 +274,6 @@ def pattern_19():
 1 0 1 0 1 
 """
 def pattern_20():
-    y = 1
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(1,x+1):
@@ -287,3 +283,148 @@ def pattern_20():
                 print(1,end=" ")
         print(" ")
 # pattern_20()
+"""
+0 1 0 1 0  
+0 0 0 0 0  
+0 1 0 1 0  
+0 0 0 0 0  
+0 1 0 1 0
+"""
+def pattern_21():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if i%2 == 0 or j%2 != 0: 
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_21()
+"""
+0 0 0 0 0  
+1 1 1 1 1  
+0 0 0 0 0  
+1 1 1 1 1  
+0 0 0 0 0 
+"""
+def pattern_22():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if i%2 == 0 : 
+                print(1,end=" ")
+            else:
+                print(0,end=" ")
+        print(" ")
+# pattern_22()
+"""
+1 1 1 1 1  
+0 0 0 0 0  
+1 1 1 1 1  
+0 0 0 0 0  
+1 1 1 1 1 
+"""
+def pattern_23():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if i%2 == 0 : 
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_23()
+"""
+0 1 0 1 0  
+0 1 0 1 0  
+0 1 0 1 0  
+0 1 0 1 0  
+0 1 0 1 0 
+"""
+def pattern_24():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if j%2 != 0 : 
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_24()
+"""
+1 0 1 0 1  
+1 0 1 0 1  
+1 0 1 0 1  
+1 0 1 0 1  
+1 0 1 0 1 
+"""
+def pattern_25():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if j%2 == 0 : 
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_25()
+"""
+A A A A A  
+B B B B B  
+C C C C C  
+D D D D D  
+E E E E E  
+"""
+def pattern_26():
+    x = int(input("Enter the number: "))
+    for i in range(0,x):
+        for j in range(0,x):
+            char = chr(65+i)
+            print(char,end=" ")
+        print(" ")
+# pattern_26()
+"""
+A B C D E  
+A B C D E  
+A B C D E  
+A B C D E  
+A B C D E  
+"""
+def pattern_27():
+    x = int(input("Enter the number: "))
+    for i in range(0,x):
+        for j in range(0,x):
+            char = chr(65+j)
+            print(char,end=" ")
+        print(" ")
+# pattern_27()
+"""
+E E E E E  
+D D D D D  
+C C C C C  
+B B B B B  
+A A A A A  
+"""
+def pattern_28():
+    x = int(input("Enter the number: "))
+    for i in range(0,x):
+        for j in range(0,x):
+            char = chr(69-i)
+            print(char,end=" ")
+        print(" ")
+# pattern_28()
+"""
+E D C B A  
+E D C B A  
+E D C B A  
+E D C B A  
+E D C B A
+"""
+def pattern_29():
+    x = int(input("Enter the number: "))
+    for i in range(0,x):
+        for j in range(0,x):
+            char = chr(69-j)
+            print(char,end=" ")
+        print(" ")
+# pattern_29()
