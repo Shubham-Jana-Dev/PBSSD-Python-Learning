@@ -233,18 +233,57 @@ def pattern_17():
             print(2*(i+j)-1,end="\t")
         print(" ")
 # pattern_17()
+"""
+0 1 0 1 0  
+1 0 1 0 1  
+0 1 0 1 0  
+1 0 1 0 1  
+0 1 0 1 0 
+"""
 def pattern_18():
     y = 1
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(1,x+1):
             if i%2 == 0 and j%2 != 0 or i%2 != 0 and j%2 == 0:  # if (i + j) % 2 != 0:
-                print(1,end="\t")
+                print(1,end=" ")
             else:
-                print(0,end="\t")
+                print(0,end=" ")
         print(" ")
-pattern_18()
-
-
-
-
+# pattern_18()
+"""
+1 0 1 0 1  
+0 1 0 1 0  
+1 0 1 0 1  
+0 1 0 1 0  
+1 0 1 0 1  
+"""
+def pattern_19():
+    y = 1
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if (i + j) % 2 != 0:
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_19()
+"""
+1 0 1 0 1  
+0 0 0 0 0  
+1 0 1 0 1  
+0 0 0 0 0  
+1 0 1 0 1 
+"""
+def pattern_20():
+    y = 1
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x+1):
+            if i%2 == 0 or j%2 == 0: 
+                print(0,end=" ")
+            else:
+                print(1,end=" ")
+        print(" ")
+# pattern_20()
