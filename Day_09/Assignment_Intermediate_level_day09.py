@@ -167,6 +167,7 @@ else:
 #45. Calculate bonus:
 # Salary ≥ 50000 → 10%
 # Salary < 50000 → 5%
+'''
 s = float(input("Enter your salary: "))
 if(0<=s<50000):
     print("Your bonus: ",s*0.05)
@@ -174,3 +175,53 @@ elif(s>=50000):
     print("Your bonus: ",s*0.1)
 else:
     print("Salary must be positive.")
+'''
+# 46. Find whether a number lies between two given numbers.
+def problem_46():
+    ran1 = int(input("Enter the starting: "))
+    ran2 = int(input("Enter the ending: "))
+    num = int(input("Enter the number: "))
+    if ran1<ran2:
+        if ran1<=num<=ran2:
+            print(f"{num} is lies between {ran1} and {ran2}.")
+        else:
+            print(f"{num} does not lie between {ran1} and {ran2}.")
+    else:
+        print("Please fix the order of the range.")
+# problem_46()
+# 47. Check whether a number is divisible by 8 or 12.
+def divisibility_47():
+    num = int(input("Enter the number: "))
+    if num%12 == 0 and num%8 == 0:
+        print(f"{num} is divisible by both 8 and 12.")
+    elif num%8 == 0:
+        print(f"{num} is divisible by 8.")
+    elif num%12 == 0:
+        print(f"{num} is divisible by 12.")
+    else:
+        print(f"{num} is divisible by neither 8 nor 12. ")
+# divisibility_47()
+# 48. Check whether a person is a child, teenager, or adult.
+def problem_48():
+    age = int(input("Enter your age: "))
+    if(0<=age<=12):
+        print("You are a child.")
+    elif(12<age<18):
+        print("You are a teenager.")
+    elif(18<=age):
+        print("You are an adult.")
+    else:
+        print(f"Sorry you have to wait {age*(-1)} years of see a minimum output till then enjoy in the Heaven.")
+# problem_48()
+# 49. Check whether a number is a multiple of 3 or 7.
+def problem_49():
+    num = int(input("Enter the number: "))
+    if num%3 == 0 and num%7 == 0:
+        print(f"{num} is a multiple of both 3 and 7.")
+    elif num%3 == 0:
+        print(f"{num} is a multiple of 3.")
+    elif num%7 == 0:
+        print(f"{num} is a multiple of 7.")
+    else:
+        print(f"{num} is not a multiple of 7 nor 3.")
+problem_49()
