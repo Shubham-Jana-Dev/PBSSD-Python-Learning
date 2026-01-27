@@ -130,8 +130,33 @@ def pattern_09():
             print(i*j,end="\t")
         print("  ")
 # pattern_09()
-
-# pattern_10()
+"""
+1 1 2 1 3 1   
+1 2 2 2 3 2   
+1 3 2 3 3 3   
+1 4 2 4 3 4   
+1 5 2 5 3 5 
+"""
+def pattern_10():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x-1):
+            print(j,i,end=" ")
+        print("  ")
+pattern_10()
+"""
+1 1 1 2 1 3   
+2 1 2 2 2 3   
+3 1 3 2 3 3   
+4 1 4 2 4 3   
+5 1 5 2 5 3 
+"""
+def pattern_11():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(1,x-1):
+            print(i,j,end=" ")
+        print("  ")
 # pattern_11()
 
 """
