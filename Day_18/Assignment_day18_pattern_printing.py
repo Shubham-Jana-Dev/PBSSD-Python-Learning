@@ -428,3 +428,104 @@ def pattern_29():
             print(char,end=" ")
         print(" ")
 # pattern_29()
+"""
+A B C D E  
+F G H I J  
+K L M N O  
+P Q R S T  
+U V W X Y 
+"""
+def pattern_30():
+    y=0
+    x = int(input("Enter the number: "))
+    for i in range(0,x):
+        for j in range(0,x):
+            char = chr(65+y)
+            y +=1
+            print(char,end=" ")
+        print(" ")
+# pattern_30()
+"""
+A F K P U  
+B G L Q V  
+C H M R W  
+D I N S X  
+E J O T Y 
+"""
+def pattern_31():
+    y=0
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(0,x):
+            if j%2 == 0:
+                y = i+(j*x)
+            else:
+                y = (j+1)*x-i+1
+            char = chr(64+y)
+            print(char,end=" ")
+        print(" ")
+# pattern_31()
+"""
+A F K P U  
+B G L Q V  
+C H M R W  
+D I N S X  
+E J O T Y  
+"""
+def pattern_32():
+    y=0
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(0,x):
+            y = i+(j*x)
+            char = chr(64+y)
+            print(char,end=" ")
+        print(" ")
+# pattern_32()
+"""
+E J O T Y  
+D I N S X  
+C H M R W  
+B G L Q V  
+A F K P U  
+"""
+def pattern_33():
+    y=0
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for j in range(0,x):
+            y = (j+1)*x-i+1
+            char = chr(64+y)
+            print(char,end=" ")
+        print(" ")
+# pattern_33()
+"""
+*  
+* *  
+* * *  
+* * * *  
+* * * * * 
+"""
+def pattern_34():
+    num = int(input("Enter the number: "))
+    for i in range(1,num+1):
+        for j in range(1,num+1):
+            if i+j > num:
+                print('*',end=" ")
+        print(" ")
+# pattern_34()
+"""
+1  
+2 2  
+3 3 3  
+4 4 4 4  
+5 5 5 5 5 
+"""
+def pattern_35():
+    num = int(input("Enter the number: "))
+    for i in range(1,num+1):
+        for j in range(1,num+1):
+            if i+j > num:
+                print(i,end=" ")
+        print(" ")
+# pattern_35()
