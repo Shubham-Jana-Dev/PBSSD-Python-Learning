@@ -223,9 +223,7 @@ def pattern_17():
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(0,x):
-            if j%2 == 0 and i%2 != 0:
-                y = i+j
-            print(y,end="\t")
+            print(2*(i+j)-1,end="\t")
         print(" ")
 pattern_17()
 
