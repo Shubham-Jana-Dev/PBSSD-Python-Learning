@@ -4,342 +4,165 @@
 
 # 🐍 PBSSD Python Programming Journey
 
-Welcome to my learning repository! This project documents my progress in the **Paschim Banga Society for Skill Development (PBSSD)** Python Programming course. Here, I store my daily notes, practice scripts, and logic-building exercises.
+Welcome to my learning repository! This project documents my progress in the **Paschim Benga Society for Skill Development (PBSSD)** Python Programming course. 
+
+> **💡 The Engineering Pivot:** > Although my official curriculum shifted to Web Development on Day 16, I am continuing my Python mastery independently. This repository now documents my transition into self-taught advanced logic, bridging the gap between core Python and full-stack engineering.
 
 ---
 
-## 🗓️ Day 01: The Foundations of Python
-**Date:** December 18, 2025  
-**Focus:** Development Environments, Dynamic Typing, and Memory Management.
+## 📅 Daily Progress Tracker
 
-### 1. Understanding the Environment
-* **IDLE:** Explored the Interactive Shell for quick testing and Script Mode for permanent programs.
-* **PVM (Python Virtual Machine):** Learned how the internal engine executes our source code.
-
-### 2. Key Technical Concepts
-* **Dynamic Typing:** Verified classes (`int`, `str`, `float`, `list`) using the `type()` function.
-* **Memory Management:** Used `id()` to fetch unique memory addresses of objects.
-* **Keywords:** Utilized the `keyword` module to identify reserved words.
-
----
-
-## 🗓️ Day 02: Identifiers, Variables, and Memory
-**Date:** December 19, 2025  
-**Focus:** Naming conventions, ASCII values, and memory optimization.
-
-### 1. Python Identifiers
-* **Case Sensitivity:** Learned how Python differentiates names based on **ASCII** values.
-* **Naming Rules:** Mastered rules for valid identifiers (no leading digits, no special symbols except `_`).
-* **Built-in Functions:** Used `ord()` for character-to-ASCII and `chr()` for ASCII-to-character conversion.
+| Day | Topic | Highlights | Links |
+|:---:|:---|:---|:---:|
+| **01-11** | Core Foundations | Variables, Memory, Data Types | [View Folders](./) |
+| **12** | Armstrong & Loops | `for` loops, `range()`, logic building | [Notes](#-day-12-armstrong-numbers--for-loop-iterators) |
+| **13** | Nested Loop Geometry | Pattern printing, Range Algorithms | [Notes](#-day-13-nested-loops--pattern-geometry) |
+| **14** | Matrix Operations | 2D Searching, Coordinate Mapping | [Notes](#-day-14-matrix-operations--coordinate-mapping) |
+| **15** | Advanced Pattern Design | Geometric logic, Region filling | [Notes](#-day-15-geometric-logic--advanced-pattern-design) |
+| **16** | Functional Programming | `def`, `return`, Lambda functions | [Code](./Day_16/) |
+| **17** | **Advanced Iterators** | `map`, `filter`, `*args`, `**kwargs` | [Notebook](./Day_17/day17_pbssd.ipynb) |
 
 ---
 
-## 🗓️ Day 03: Variable Scope & Memory Stack
-**Date:** December 20, 2025  
-**Focus:** Local vs. Global variables and LIFO memory logic.
-
-### 1. Scope and Accessibility
-* **Local Variables:** Declared inside blocks/functions; restricted visibility to that local area.
-* **Global Variables:** Declared at the top level; accessible throughout the script.
-* **The `global` Keyword:** Learned to modify global values from within a local scope.
-
-### 2. Memory Logic (LIFO)
-* **Stack Memory:** Explored how Python manages function calls using the **Last-In, First-Out** principle.
-
-### 3. Homework & Problem Solving
-* **Solved 12 logic-based questions** regarding variable scope and memory output.
-* Solutions are available in the [Day_03 Folder](./Day_03).
----
-
-## 🚀 Day 03: Practical Assignment Showcase
-**Total Tasks:** 12 Python Scripts  
-**Objective:** Mastering arithmetic operators, user input handling, and mathematical logic using "Pure Python" (No external modules).
-
-### 🛠️ Problem-Solving Highlights
-Below is the list of 12 logic-based programs I developed and pushed to the `Day_03/` folder:
-
-| No. | Problem Statement | Core Logic / Formula |
-| :--- | :--- | :--- |
-| 01 | **Area of Parallelogram** | `base * height` |
-| 02 | **Area of Conical Vessel** | $A = \pi r (l + r)$ (using $l = \sqrt{r^2 + h^2}$) |
-| 03 | **Area of Parallelepiped** | $2 \times (ab + bh + ha)$ |
-| 04 | **Quadratic Equation** | Used discriminant $d = b^2 - 4ac$ and roots formula |
-| 05 | **Equilateral Triangle** | $Area = \frac{h^2}{\sqrt{3}}$ |
-| 06 | **Area of Ellipse** | $\pi \times a \times b$ |
-| 07 | **KM to Miles** | $km \times 0.6214$ |
-| 08 | **Right-Angle Check** | Pythagorean Theorem: $a^2 + b^2 == c^2$ (Boolean logic) |
-| 09 | **Temp Converter** | $C \rightarrow F$ and $C \rightarrow K$ |
-| 10 | **Rhombus & Half-Circle** | $\frac{d_1 \times d_2}{4}$ and $\frac{\pi r^2}{2}$ |
-| 11 | **Surface Area of Cube** | $6 \times s^2$ |
-| 12 | **Precision Heron's** | Unit conversion: $cm \rightarrow m$ and $\mu m \rightarrow m$ |
-
-### 🔍 Technical Observation
-During this assignment, I practiced **Precision Unit Conversion**. In Task 12, I manually converted $2.3 \text{ cm}$ and $6.31 \text{ }\mu\text{m}$ to meters to ensure the dimensions were standardized before applying Heron's Formula.
+## 🛠️ Current Tech Stack
+* **Language:** Python 3.x
+* **Environment:** Anaconda / Jupyter Notebooks / VS Code
+* **Focus:** Logic Building, Data Structures, and Modular Programming
 
 ---
 
-## 🗓️ Day 04: Literals & Number Systems
-**Date:** December 21, 2025  
-**Focus:** Data types (Literals) and Base-N number representations.
-
-### 1. Python Literals
-Literals are constant values assigned to variables. I practiced identifying various types:
-* **Numeric:** `int` (19), `float` (45.7), `complex` (10+20j).
-* **Boolean:** `True` / `False`.
-* **Collections:** `list` [ ], `tuple` ( ), `set` { }, and `dict` {key:value}.
-
-### 2. Integral Representations (Number Systems)
-Python allows representing integers in four different bases:
-
-| System | Base (Radix) | Prefix | Digits |
-| :--- | :--- | :--- | :--- |
-| **Decimal** | 10 | None | 0-9 |
-| **Binary** | 2 | `0b` or `0B` | 0, 1 |
-| **Octal** | 8 | `0o` or `0O` | 0-7 |
-| **Hexadecimal**| 16 | `0x` or `0X` | 0-9, A-F |
-
-### 3. Conversion Functions
-* **`bin()`**: Converts an integer to its binary string representation.
-* **`oct()`**: Converts an integer to its octal string representation.
-* **`hex()`**: Converts an integer to its hexadecimal string representation.
-  ---
+## 🗓️ Day 01 - Day 11: Foundations
+*Summary of core concepts covered in the initial weeks:*
+* **Memory Management:** Object IDs, Stack (LIFO), and PVM logic.
+* **Data Types:** Dynamic typing, ASCII conversions (`ord`/`chr`), and Number Systems (Hex, Binary, Octal).
+* **Control Flow:** `if-elif-else` ladders and basic `while` loops for automation.
+* **Math Assignments:** 100+ problems solved across basic, intermediate, and advanced levels.
 
 ---
-## 🗓️ Day 05: Strings, Hex, and Floating-Point Precision
-**Date:** December 26, 2025  
-**Focus:** Hexadecimal representations, String delimiters, and Manual Base Conversions.
-
-### 1. Key Concepts
-* **Hexadecimal:** Base-16 system using `0-9` and `A-F`. Prefixed with `0x`.
-* **String Literals:** Mastered `' '`, `" "`, and `''' '''` for multi-line flexibility.
-* **Exponential Notation:** Using `e/E` (Mantissa/Exponent) for fractional literals.
-* **Triple Quotes (`'''`):** Used for multi-line strings and handling complex character nesting.
-* **f-Strings (Formatted Literals):** Implemented `f"Text {variable}"` for dynamic and readable output.
-* **The `.split()` Method:** Practiced splitting user input using custom delimiters.
-* **Type Casting:** * `float(ord('a'))`: Converting ASCII integers to floating-point numbers.
-    * `int(float_value)`: Handling conversions between decimal and whole numbers.
-* **Base Functions:** Verification of manual Hex/Octal math using built-in `hex()` and `oct()`.
----
-## 🗓️ Day 06: Complex Literals & Bitwise Foundations
-**Date:** December 27, 2025  
-**Focus:** Complex number manipulation, Type casting limitations, and Bitwise logic preparation.
-
-### 1. Complex Literals & Components
-* **Structure:** `x = real + imag j`
-* **Observation:** The components `.real` and `.imag` always return **float** values.
-* **Math Operations:** Successfully implemented addition, subtraction, multiplication, and division on complex objects.
-* **Casting Rules:** * `complex -> str`: ✅ Possible.
-    * `complex -> int/float`: ❌ Raises `TypeError`.
----
-## 🗓️ Day 07: Type Casting (Widening & Narrowing)
-**Focus:** Implicit vs. Explicit conversion and Collection Casting.
-
-### 1. Casting Types
-* **Implicit (Up-casting):** Small type to Large type (e.g., `int` -> `float`). Handled by PVM. No data loss.
-* **Explicit (Down-casting):** User-defined conversion using functions. Potential for data loss.
-
-### 2. Collection Conversions
-* **`set()`:** Useful for removing duplicates from a `list` or `string`.
-* **`dict()`:** Requires specific structures (Key-Value pairs). Cannot cast single numeric literals to a dictionary.
-
-> **Note:** Today's session was highly motivational, focusing on the "Immortal support" provided by our mentor to master these foundational logic steps.
----
-## 🗓️ Day 08: Logic & Computer Arithmetic
-**Focus:** Explicit Casting, Number Compliments, and Decision Control.
-
-### 1. Radix Compliments ($r$'s and $r-1$'s)
-* Explored 2's, 7's, and 8's compliments for digital representation.
-* These are essential for understanding how the CPU handles negative numbers and subtraction.
-
-### 2. Explicit Type Casting (Narrowing)
-* **Definition:** Storing a larger data type into a smaller one manually.
-* **Risk:** Data loss (e.g., `15.7` becomes `15`).
-* **Responsibility:** Manually handled by the developer.
-
-### 3. Control Flow (Decision Making)
-* Introduced the `if` statement to control the **Runtime Environment**.
-* **Indentation:** Learned that Python uses indentation to define the "body" of a block.
----
-## 🗓️ Day 09: Decision Making - if, else, and elif
-**Topic:** Branching Logic and Nested Conditionals.
-
-### 1. Theory of Choice
-* **if-else:** Used for "Either/Or" decisions (Binary choices).
-* **if-elif-else:** Used for sequential condition checking (Multiple exclusive paths).
-* **Nesting:** Placing an `if` inside another `if` to handle multi-layered logic (e.g., checking if a number is positive AND even).
-
-
-
-### 2. Practical Projects
-* **Advanced Calculator:** Handles `+`, `-`, `*`, `/`, `%` with error handling for zero-division.
-* **Character Classifier:** Uses string comparison logic to detect Uppercase, Lowercase, and Numeric digits.
-* **Tiered Billing System:** A complex script calculating electricity costs based on usage units, utilizing nested ranges for precision.
-
-### 💡 Engineering Insight
-In the Electricity Bill problem, I learned that the **order of conditions** matters significantly in an `if-elif` ladder. Python stops at the first `True` condition it finds, so precision in range-setting is vital.
-
----
-## 🗓️ Day 10: Iterative Statements (The while Loop)
-**Topic:** Automating repetitive tasks using conditional loops.
-
-### 1. Theory of Iteration
-* **Definition:** Iterative statements are used to execute a block of code repeatedly.
-* **The `while` Loop:** Best used when the number of iterations is **not known in advance**. The loop runs as long as the argument/parameter remains `True`.
 
 ## 🗓️ Day 12: Armstrong Numbers & For-Loop Iterators
-**Topic:** Digit logic, Indexing, and Range-based iteration.
+**Focus:** Digit logic and Range-based iteration.
 
-### (*_*) What is an Armstrong Number?
-A number is an **Armstrong number** if the sum of its own digits each raised to the power of the number of digits equals the number itself. 
-*Example:* $153$ ($3$ digits): $1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153$.
+### 1. Armstrong Number Logic
+A number is an **Armstrong number** if the sum of its own digits each raised to the power of the number of digits equals the number itself.
+*Example:* $153$ ($3$ digits): $1^3 + 5^3 + 3^3 = 153$.
 
+### 2. The `for` Loop & `range()`
+* **Stream Processing:** Python treats sequences as data streams starting at **index 0**.
+* **`range(start, stop, step)`**: Mastered forward and reverse iteration.
 
-
-### (*_*) Iteration: The `for` Loop
-* **Purpose:** Used when the number of executions is known in advance.
-* **Stream Processing:** Python treats sequences (strings, lists, ranges) as streams of data starting at **index 0**.
-
-### (*_*) The `range()` Function
-* `range(n)`: Starts at 0, ends at n-1.
-* `range(m, n)`: Starts at m, ends at n-1.
-* `range(m, n, -1)`: Reverse iteration.
-
-### (*_*) Sneak Peek: Functions (`def`)
-* Introduced the concept of **Reusability**. Using `return` to pass values back from a logic block.
-
-### 2. Logic Implementation
-* **Factorial Calculation:** Using a decrementing `while` loop to multiply a sequence of numbers down to 1.
-* **Range Analysis:** A sophisticated script that:
-    1. Iterates through a user-defined range.
-    2. Uses modulo logic to categorize numbers as Even or Odd.
-    3. Maintains counters and running sums for both categories.
-
-### 📝 B.Tech Student Note
-In iterative logic, the **Update Statement** (like `temp -= 1` or `x += 1`) is the most important part. Without it, the loop becomes an "Infinite Loop," which can crash the runtime environment.
 ---
+
 ## 🗓️ Day 13: Nested Loops & Pattern Geometry
-**Topic:** Coordinate-based iteration and range-bound algorithms.
+**Focus:** Coordinate-based iteration and the "Clock Hand" model.
 
-### 1. Range Algorithms
-* **Factorials in Range:** Calculating $n!$ for every integer in a user-defined interval.
-* **Palindrome & Armstrong Ranges:** Implementing nested logic to filter numbers that satisfy specific symmetry or power-sum properties across large data sets.
+* **Clock Hand Model:** Outer loop (Hour) and Inner loop (Minute).
+* **Pattern Logic:**
+  * Left Triangle: `if i >= j`
+  * Right Triangle: `if i + j >= r + 1`
+  * Diagonal (X-Shape): `if i == j or i + j == r + 1`
 
-
-
-### 2. Nested Loop Theory: The "Clock Hand" Model
-* **Outer Loop:** Acts like the hour hand (moves once per full cycle of the inner loop).
-* **Inner Loop:** Acts like the minute hand (completes all iterations for every single step of the outer loop).
-
-### 3. Pattern Printing (Logic Matrix)
-By treating the loop variables `i` (rows) and `j` (columns) as coordinates, I implemented the following geometric logic:
-* **Left Triangle:** `if i >= j`
-* **Right Triangle:** `if i + j >= r + 1`
-* **Diagonal (X-Shape):** `if i == j or i + j == r + 1`
-* **Hollow Square:** `if i == 1 or j == 1 or i == r or j == r`
-
-### ✨ The "Curiosity" Zone
-My favorite implementation today was combining boundary logic with mid-point logic `(i == (t+1)/2)` to create complex symmetrical grids.
 ---
+
 ## 🗓️ Day 14: Matrix Operations & Coordinate Mapping
-**Topic:** Numerical matrices, 2D searching, and advanced conditional patterns.
+**Focus:** Numerical matrices and 2D searching.
 
-### 1. Matrix Numerical Logic
-Today I explored different mathematical ways to fill a $N \times N$ matrix:
-* **Natural Sequential:** Incrementing a counter for a row-major fill.
-* **Product Matrix:** `i * j` for a multiplication table format.
-* **Offset Logic:** `i + j` to create shifting numerical patterns.
-* **Column-Major Fill:** Using `i + (j * rg)` to fill data vertically instead of horizontally.
+* **Numerical Filling:** Implemented row-major and column-major matrix population.
+* **2D Search:** Built a search algorithm that returns the exact **Coordinate Pair** $(x, y)$ of a target value.
 
-
-
-### 2. Searching in 2D
-I implemented a search algorithm that scans the generated matrix for a target value.
-* **Feature:** If found, the program returns the **Coordinate Pair** $(x, y)$.
-* **Logic:** Using a "found" flag to handle cases where the target is missing.
-
-### 3. Advanced Pattern Coordinates
-Using the `(*_*)` logic to map specific points:
-* **Hollow Square with Diagonals:** `(i == j) or (i + j == Range + 1) or (i == 1) or (j == 1)...`
-* **The Plus Sign:** Using mid-point calculation `(Rg + 1) / 2`.
-* **The "Star-in-a-Box":** A combination of boundary, diagonal, and mid-point conditions.
 ---
+
 ## 🗓️ Day 15: Geometric Logic & Advanced Pattern Design
-**Topic:** Multi-conditional logic and coordinate-based region filling.
+**Focus:** Multi-conditional logic and region filling.
 
-### (*_*) The Logic of Lines
-Today I focused on combining multiple diagonal and boundary conditions to create specific visual structures:
-* **The "N" Shape:** `j == 1 or j == Rg or j == i`
-* **The "Z" Shape:** `i == 1 or i == Rg or i + j == Rg + 1`
-* **The "Hourglass in a Box":** Combining `i == 1`, `i == f`, and diagonal conditions with range limits (e.g., `i >= j` and `i + j >= f + 1`).
+* **Advanced Shapes:** Implemented "N" and "Z" shapes using diagonal boundary conditions.
+* **Symmetry:** Mastered the center point calculation `(f + 1) // 2` for odd-numbered grids.
+* **Region Filling:** Used inequalities to create solid geometric shapes within matrices.
 
-### (*_*) Key Insights for B.Tech Logic
-1. **Vertical vs. Horizontal:** `i` controls the Row (Horizontal lines), `j` controls the Column (Vertical lines).
-2. **The "Shadow" Effect:** Using inequalities like `j >= i` or `i + j <= t + 1` allows us to fill whole sections of the matrix, creating solid triangles instead of just thin lines.
-3. **The Center Point:** Learned that for perfect symmetry, `(f + 1) / 2` works best with odd-numbered ranges.
 ---
+
 ## 🗓️ Day 16: Functions & Functional Programming
-**Topic:** Reusability, Parameterized Functions, and Lambda Expressions.
+**Focus:** Reusability and Lambda Expressions.
 
-### 1. Function Types
-* **Built-in:** Functions like `print()`, `len()`, and `range()` provided by Python.
-* **User-Defined:** Custom logic blocks created using the `def` keyword.
+* **Types:** Built-in vs. User-defined (`def`).
+* **Lambda Functions:** Single-line, anonymous functions for quick operations.
+* **Higher-Order Functions:** Passing functions as arguments to other functions to create modular "tools."
 
+---
 
+## 🗓️ Day 17: Advanced Iterators & Arguments
+**Focus:** Scalable functions and Jupyter integration.
 
-### 2. Core Concepts
-* **Parameters & Arguments:** Passing data into functions (e.g., `name`, `age`).
-* **The `return` Statement:** Sending processed data back to the caller.
-* **`pass` Keyword:** A placeholder for future code, preventing indentation errors during development.
+* **Tools:** `map()` for transformations and `filter()` for conditional data extraction.
+* **Scalability:** * `*args`: Tuple-based positional arguments.
+  * `**kwargs`: Dictionary-based keyword arguments.
+* **Environment:** Successfully migrated to **Jupyter Notebooks** for interactive debugging.
 
-### 3. Anonymous (Lambda) Functions
-I explored the unique syntax of **Lambda functions**:
-* **Syntax:** `variable = lambda parameters: expression`
-* **Features:** Single-line execution, no explicit return needed, can handle multiple parameters.
-
-### 4. Higher-Order Functions
-Implemented logic where a function acts as a "tool" passed into another function:
-```python
-# Passing 'square' function as an argument to 'transform_list'
-def transform_list(num_list, transform_items):
-    return [transform_items(num_list[0]), transform_items(num_list[1])]
-
-### 2. Scientific & Exponential Complex Literals
-Practiced defining complex numbers using scientific notation:
-```python
-x = -34e3 + (-45.6e3j) # Handling large-scale complex data
-
-### 📝 Example Snippet: f-Strings
-name = "Shubham Jana"
-address = "Kolkata"
-print(f"Name of the person is {name}")
-print(f"Address of {name} is {address}")
-
-
+---
 
 ## 📂 Repository Structure
 
 PBSSD-PYTHON-LEARNING/
-├── assets/
-│   └── PBSSD.png              # Program Logo
+├── Day_01_to_11/      # Foundation logic and 100-problem assignment
+├── Day_12/            # Armstrong numbers & For loops
+├── Day_13/            # Pattern printing part 1
+├── Day_14/            # Matrix & 2D Search
+├── Day_15/            # Advanced Geometry Patterns
+├── Day_16/            # Functions & Lambda
+├── Day_17/            # Jupyter Notebooks (*args/**kwargs)
+└── assets/            # Project images and logos
+
+---
+
+> "Reputation is built one commit at a time." 🚀
+
+
+## 📂 File Structure
+
+Below is the detailed organization of the repository. Each day folder contains the source code, relevant assets, and a dedicated `.md` summary of that day's concepts.
+
+```text
+PBSSD-PYTHON-LEARNING/
+├── assets/                    # Global images/logos
 ├── Day_01/
-│   └── day01_pbssd.py         # Foundations & IDLE
+│   ├── assets_day01/          # Concept screenshots
+│   ├── day01_pbssd.py         # Foundations
+│   └── Day_01.md              # Documentation
 ├── Day_02/
-│   └── day02_pbssd.py         # Identifiers & ASCII
+│   ├── assets_day02/          # Memory & ASCII diagrams
+│   ├── day02_pbssd.py         # Identifiers
+│   └── Day_02.md
 ├── Day_03/
-│   ├── day03_pbssd.py         # Scope & Memory Stack
-│   └── Assignment_day03.py    # 12 Logic-based math scripts
-├── Day_04/
-│   └── day04_pbssd.py
-├── Day_05/
-│   ├── day05_pbssd.py         # Scope & Memory Stack
-├── Day_06/
-│   └── day06_pbssd.py
-├── Day_07/
-│   └── day07_pbssd.py
-├── Day_08/
-│   └── day08_pbssd.py
-├── Day_09/
-│   └── day09_pbssd.py
-├── .gitignore                 # Files to exclude from Git
-├── LICENSE                    # Project License
-└── README.md                  # Project Documentation
+│   ├── assets_day03/          # Scope & Stack diagrams
+│   ├── Assignment_day03.py    # 12 Logic scripts
+│   ├── day03_pbssd.py         # Variable Scope
+│   └── Day_03.md
+├── Day_04/ to Day_11/         # Foundational Phase (Standardized Structure)
+│   ├── dayXX_pbssd.py
+│   └── Day_XX.md
+├── Day_12/
+│   ├── day12_pbssd.py         # Armstrong Logic
+│   └── Day_12.md
+├── Day_13/
+│   ├── day13_pbssd_pattern_printing.py
+│   ├── day13_pbssd.py
+│   └── Day_13.md
+├── Day_14/
+│   ├── day14_pbssd_pattern_printing.py
+│   └── Day_14.md
+├── Day_15/
+│   ├── day15_pbssd_pattern_printing.py
+│   └── Day_15.md
+├── Day_16/
+│   ├── day16_pbssd_functions.py
+│   └── Day_16.md
+├── Day_17/                    # Advanced Modular Phase
+│   ├── Day_17.md              # Detailed concept notes
+│   ├── day17_pbssd_function.py
+│   └── day17_pbssd.ipynb      # Interactive Notebook
+├── Day_18/
+│   ├── Assignment_day18_pattern_printing.py
+│   └── Day_18.md
+├── .gitignore                 # Version control exclusions
+├── LICENSE                    # Repository license
+└── README.md                  # Main Documentation (This file)
