@@ -1,88 +1,89 @@
-def print_A_disc(my_dic):
-    print(my_dic) 
-my_Dictionary = {1,2,3,4,5,2,7,9,90}
-# print_A_disc(my_Dictionary)
-'''
-{1, 2, 3, 4, 5, 7, 9, 90}   ---> Output
-the out put will return the with only all the unique elemets of the dictionary. Because a dictionary 
-does not store same alement multiple times.
-'''
+"""
+Day 19: Data Structures Lab
+Focus: List vs. Tuple vs. Set (Mutability and Uniqueness)
+"""
 
-# create a new list of all unique elements from the given list My_list = [1,32,4,65,4,3,2,1,6,65,7,8,7,9,90,32,4,2,1,6]
-def Create_unique_list(list1):
+# --- 1. Understanding Sets & Uniqueness ---
+def print_unique_elements(my_collection):
+    """
+    Demonstrates that passing a collection to a set 
+    removes duplicates automatically.
+    """
+    print(my_collection) 
+
+# Note: Using { } with single values creates a SET, not a Dictionary.
+# A Dictionary requires key-value pairs {key: value}.
+my_set = {1, 2, 3, 4, 5, 2, 7, 9, 90}
+# print_unique_elements(my_set) 
+# Output: {1, 2, 3, 4, 5, 7, 9, 90} (Duplicates like '2' are removed)
+
+
+# --- 2. List to Set Conversion for Data Cleaning ---
+def create_unique_list(list1):
+    """Creates a new list containing only unique elements."""
     temp = set(list1)
     new_list = list(temp)
     return new_list
-My_list = [1,32,4,65,4,3,2,1,6,65,7,8,7,9,90,32,4,2,1,6]
-result = Create_unique_list(My_list)
-# print(result)
+
+my_list = [1, 32, 4, 65, 4, 3, 2, 1, 6, 65, 7, 8, 7, 9, 90, 32, 4, 2, 1, 6]
+unique_result = create_unique_list(my_list)
+# print(f"Unique List: {unique_result}")
 
 
-def understanding_the_indexing_featureIn_list_and_tupple(My_list1,listIndex,My_tupple,tuppleIndex):
-    print(My_list1[listIndex])
-    print(My_tupple[tuppleIndex])
-A_list = [32, 1, 65, 3, 342, 2, 6, 7, 8, 9, 90]
-A_tupple = (32, 1, 65, 3, 342, 2, 6, 7, 8, 9, 90)
-# understanding_the_indexing_featureIn_list_and_tupple(A_list,4,A_tupple,4)
+# --- 3. Indexing: Lists vs. Tuples ---
+def check_indexing(my_list, list_index, my_tuple, tuple_index):
+    """Demonstrates that both lists and tuples support positional indexing."""
+    print(f"List element at {list_index}: {my_list[list_index]}")
+    print(f"Tuple element at {tuple_index}: {my_tuple[tuple_index]}")
+
+a_list = [32, 1, 65, 3, 342, 2, 6, 7, 8, 9, 90]
+a_tuple = (32, 1, 65, 3, 342, 2, 6, 7, 8, 9, 90)
+# check_indexing(a_list, 4, a_tuple, 4)
 
 
-'''                      ---------List VS Set---------
-The main difference between lists and tupples is, lists are mutable means we can upadet it's data elements
-or we can add elements (.append) or remove elements (.remove).
-but we cant any operation in the tupple so sets are immutable.
-'''
-def exploring_append_in_list(the_lis,new_e):
-    the_lis.append(new_e)
+# --- 4. Mutability: Adding and Removing ---
+""" 
+List vs. Tuple vs. Set:
+Lists are MUTABLE (can append/remove).
+Tuples are IMMUTABLE (cannot be changed after creation).
+Sets are MUTABLE (can add/remove), but unordered.
+"""
+
+def exploring_list_operations(the_lis, new_element, old_element):
+    the_lis.append(new_element)      # Adding to end
+    the_lis.remove(old_element)      # Removing specific value
     return the_lis
-the_list = [1,2,3,4,5,6]
-New_element = 7
-result01 = exploring_append_in_list(the_list,New_element)
-# print(result01)
+
+# --- 5. Set Operations (Add/Remove) ---
+def exploring_set_operations(the_set, add_val, remove_val):
+    the_set.add(add_val)             # Sets use .add() instead of .append()
+    if remove_val in the_set:
+        the_set.remove(remove_val)
+    return the_set
+
+sample_set = {1, 2, 3, 4, 5, 6, 7}
+# print(exploring_set_operations(sample_set, 8, 6))
 
 
-def exploring_remove_in_list(the_lis,new_e):
-    the_lis.remove(new_e)
-    return the_lis
-the_list02 = [10,62,43,5,54,5,60]
-Old_element = 5
-result02 = exploring_remove_in_list(the_list02,Old_element)
-# print(result02)
-
-
-def exploring_add_in_set(the_set01,new_element01):
-    the_set01.add(new_element01)
-    return the_set01
-the_list02 = {1,2,3,4,5,6,7}
-New_element = 8
-result022 = exploring_add_in_set(the_list02,New_element)
-print(result022)
-
-
-def exploring_remove_in_set(the_set02,old_element02):
-    the_set02.remove(old_element02)
-    return the_set02
-the_list02 = {1,2,3,4,5,6,7}
-Old_element = 6
-result022 = exploring_remove_in_set(the_list02,Old_element)
-print(result022)
-
-
-def update_index_from_list(y_list,index_num,new_element99):
-    y_list[index_num] = new_element99
+# --- 6. Updating Elements ---
+def update_list_at_index(y_list, index_num, new_val):
+    """Lists allow direct index updates."""
+    y_list[index_num] = new_val
     return y_list
-lis = [44,3,21,1,2,3,434,2,6,4]
-update_requireAt = 6
-new_number_should_be = 55
-result99 = update_index_from_list(lis,update_requireAt,new_number_should_be)
-print(result99)
 
-
-def update_index_from_set(y_set,index_num,new_element991):
-    y_set.remove(index_num)
-    y_set.add(new_element991)
+def update_set_value(y_set, old_val, new_val):
+    """
+    Sets are unordered and don't support indexing. 
+    To 'update', we must remove the old and add the new.
+    """
+    if old_val in y_set:
+        y_set.remove(old_val)
+        y_set.add(new_val)
     return y_set
-set1 = {44,3,21,1,22,443,434,2,6,4}
-unwanted = 3
-new_number_should_be = 55
-result991 = update_index_from_set(set1,unwanted,new_number_should_be)
-print(result991)
+
+# Testing the updates
+test_list = [10, 20, 30, 40]
+# print(update_list_at_index(test_list, 1, 99))
+
+test_set = {10, 20, 30, 40}
+# print(update_set_value(test_set, 20, 99))
