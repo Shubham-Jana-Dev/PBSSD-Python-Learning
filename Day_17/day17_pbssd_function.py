@@ -12,6 +12,7 @@ def squre_number():
     x = lambda n : n*n
     print(f"The squre of the {num} is {x(num)}")
 # squre_number()
+
 def apply_operation(numbers, func):
     return[func(n) for n in numbers]
 my_nums = [1,2,3,4,5,6]

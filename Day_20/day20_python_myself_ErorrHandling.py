@@ -58,5 +58,39 @@ def understanding_both_at_once_implementation(customer_name,type_of_order,*args,
 shubhams_extra_order = ("rice cake","Lemon rice")
 lilis_extra_order = ("green tea","lemon","suger")
 shubhams_extra_orderkw = { "drinks":"Orange juice", "sweetener" :"Gulab Jamun"}
-understanding_both_at_once_implementation("Shubham","Burger",*shubhams_extra_order,**shubhams_extra_orderkw)
-#understanding_both_at_once_implementation("Lili","Pizza",*lilis_extra_order)
+# understanding_both_at_once_implementation("Shubham","Burger",*shubhams_extra_order,**shubhams_extra_orderkw)
+# understanding_both_at_once_implementation("Lili","Pizza",*lilis_extra_order)
+'''
+​The "Smart Billing" Challenge:
+Modify your understanding_both_at_once_implementation function to calculate a Total Bill.
+​Pass a list of items using *args.
+​Pass their prices using **kwargs.
+​The Twist: If an item in args matches a key in kwargs, add its price to the total. If it
+doesn't match, print "Price missing for [Item]".
+​Example Input: smart_bill("Shubham", "Dinner", "Burger", "Pizza", Burger=120, Pizza=250, Coke=50)
+'''
+def smart_bill(*args,**kwargs):
+    sum = 0
+    for key,value in kwargs.items():
+        for arg in args:
+            if arg == key:
+                if arg == "Shubham" and arg == "Dinner":
+                    continue
+                else:
+                    print(f"Price missing for {arg}")
+        sum += value
+    print(sum)
+# smart_bill("Shubham", "Dinner", "Burger", "Pizza", Burger=120, Pizza=250, Coke=50)
+
+# has fullfill the reqirment...
+def smart_bill1(*args,**kwargs):
+    TotalSum = 0
+    for i in args:
+        if i in kwargs:
+            TotalSum += kwargs[i]
+        else:
+            print(f"Price missing for {i}")
+    print(TotalSum)
+# smart_bill1("Shubham", "Dinner", "Burger", "Pizza", Burger=120, Pizza=250, Coke=50)
+
+
