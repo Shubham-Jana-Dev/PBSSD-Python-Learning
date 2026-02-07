@@ -58,3 +58,45 @@ def describe_pet(name,animal,**kwargs):
     for i in kwargs:
         print(f"{i}: {kwargs[i]}")
 describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
+
+'''
+Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number of keyword details.
+
+Sample output:-
+
+Pet name: Whiskers
+Animal type: cat
+Details:
+  color: gray
+  age: 3
+  favorite_food: tuna
+'''
+# TODO write the describe_pet function
+
+"""
+The "Inventory Manager" Challenge
+Let's combine everything you've learned into a mini-project. This will test your *args, **kwargs, and loop skills at once.
+
+The Goal: Write a function manage_inventory that:
+Takes a store_name as a required argument.
+Takes any number of items as *args.
+Takes stock_counts as **kwargs.
+The Logic: For every item in the list (args), print how many are in stock from the dictionary (kwargs). If it's not in the dictionary, print "Out of stock."
+Example Call: manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
+
+Expected Output:
+
+Plaintext
+Inventory for TechShop:
+Laptop: 10 in stock
+Mouse: 5 in stock
+Monitor: Out of stock
+"""
+def manage_inventory(shop_name,*args,**kwargs):
+    print(f"Inventory for {shop_name}:")
+    for item in args:
+        if item in kwargs:
+            print(f"{item}: {kwargs[item]} in stock")
+        else:
+            print(f"{item}: out of stock")
+manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
