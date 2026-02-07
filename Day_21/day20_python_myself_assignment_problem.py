@@ -47,4 +47,14 @@ def describe_pet(*args,**kwargs):
     print("Details: ")
     for i in kwargs:
         print(" ",i,":",kwargs[i])
+# describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
+
+
+# in another way to solve this 
+# Example usage:
+def describe_pet(name,animal,**kwargs):
+    print(f"Name: {name}\nanimal Type: {animal}")
+    print("Details: ")
+    for i in kwargs:
+        print(f"{i}: {kwargs[i]}")
 describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
