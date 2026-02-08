@@ -100,3 +100,41 @@ def manage_inventory(shop_name,*args,**kwargs):
         else:
             print(f"{item}: out of stock")
 manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
+"""
+The Challenge: The VIP Guest List 🎟️
+The Goal: Write a function called check_guests that separates "VIP" guests from "Regular" guests and calculates the total entry fee.
+
+The Rules:
+Required Argument: min_age (an integer).
+Flexible Arguments (*args): A list of guest names.
+Keyword Arguments (**kwargs): Guest names as keys and their ages as values.
+The Logic:
+For every name in args:
+Check their age in **kwargs.
+If their age is greater than or equal to min_age, print: "[Name] is invited."
+If their age is less than min_age OR their name isn't in kwargs, print: "[Name] is NOT invited."
+The Twist: If a guest is invited AND their age is 50 or above, they are a VIP (print "[Name] is a VIP!").
+Example Input:
+
+Python
+check_guests(21, "Shubham", "Rohan", "Amit", Shubham=25, Rohan=19, Amit=55)
+Expected Output:
+
+Plaintext
+Shubham is invited.
+Rohan is NOT invited.
+Amit is invited.
+Amit is a VIP!
+"""
+def check_guests(age,*args,**kwargs):
+    for i in args:
+        if i in kwargs:
+            if kwargs[i] >= age:
+                print(f"{i} is invited.")
+                if kwargs[i] >=50:
+                    print(f"{i} is a VIP!")
+            else:
+                print(f"{i} is NOT invited.")
+
+
+check_guests(21, "Shubham", "Rohan", "Amit", Shubham=25, Rohan=19, Amit=55)
