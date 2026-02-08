@@ -23,9 +23,9 @@ def more_pythonic(*args):
     if not args:
         return 0
     return sum(args)/len(args)
-more_pythonic(85,90,78)
-more_pythonic(100,95)
-more_pythonic()
+# more_pythonic(85,90,78)
+# more_pythonic(100,95)
+# more_pythonic()
 
 '''
 Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number of keyword details.
@@ -57,7 +57,7 @@ def describe_pet(name,animal,**kwargs):
     print("Details: ")
     for i in kwargs:
         print(f"{i}: {kwargs[i]}")
-describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
+# describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
 
 '''
 Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number of keyword details.
@@ -99,7 +99,7 @@ def manage_inventory(shop_name,*args,**kwargs):
             print(f"{item}: {kwargs[item]} in stock")
         else:
             print(f"{item}: out of stock")
-manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
+# manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
 """
 The Challenge: The VIP Guest List 🎟️
 The Goal: Write a function called check_guests that separates "VIP" guests from "Regular" guests and calculates the total entry fee.
@@ -136,5 +136,31 @@ def check_guests(age,*args,**kwargs):
             else:
                 print(f"{i} is NOT invited.")
 
+# check_guests(21, "Shubham", "Rohan", "Amit", Shubham=25, Rohan=19, Amit=55)
 
-check_guests(21, "Shubham", "Rohan", "Amit", Shubham=25, Rohan=19, Amit=55)
+"""
+Problem 3
+
+Write a function make_sandwich that accepts any number of ingredients and any number of optional preferences.
+
+Sample output
+
+Making a sandwich with:
+  turkey
+  lettuce
+  tomato
+Options:
+  sauce: mayo
+  toasted: True
+ 
+[ ]
+# TODO Write the make_sandwich function# Example usage:make_sandwich("turkey", "lettuce", "tomato", sauce="mayo", toasted=True)
+"""
+def make_sandwich(*args,**kwargs):
+    print("Making a sandwich with: ")
+    for i in args:
+        print(f"  {i}")
+    print("Options: ")
+    for i in kwargs:
+        print(f"  {i}: {kwargs[i]}")
+make_sandwich("turkey", "lettuce", "tomato", sauce="mayo", toasted=True)
