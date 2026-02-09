@@ -163,4 +163,37 @@ def make_sandwich(*args,**kwargs):
     print("Options: ")
     for i in kwargs:
         print(f"  {i}: {kwargs[i]}")
-make_sandwich("turkey", "lettuce", "tomato", sauce="mayo", toasted=True)
+# make_sandwich("turkey", "lettuce", "tomato", sauce="mayo", toasted=True)
+
+"""
+The "Kitchen Safety" Logic Challenge 🍳
+The Goal: Modify (or write a new version of) make_sandwich to include Validation.
+
+The New Rules:
+The Forbidden Ingredient: If "Pineapple" is in the args, print: "Error: We don't put pineapple on sandwiches!" and stop the function immediately (don't print anything else).
+The "Toasted" Check: If toasted=True is in the kwargs, add a message at the very end saying: "* Carefully, it's hot! *"
+The "Empty" Order: If the user calls make_sandwich() with no ingredients, print: "You can't make a sandwich with nothing!"
+"""
+def smart_sandwich_maker(*args,**kwargs):
+    bad_items = ""
+    pp = ("turkey", "lettuce", "tomato", "cheese", "ham", "bread")
+    flag = 1
+    if not args:
+        print("You can't make a sandwich with nothing!")
+        return 
+    for i in args:
+        if i == "Pineapple" or i == "pineapple": # i could use i.lower() but i didn't avoiding the build-in fuction.
+            print("Error: We don't put pineapple on sandwiches!")
+            return
+        if i not in  pp:
+            print(f"Error: {i} is not edible! We are a restaurant, not a hardware store.")
+            return        
+    else:  
+        print("Making a sandwich with:")
+        for i in args:
+            print(f"  {i}")
+    if kwargs.get("toasted") == True:
+        print ("* Carefully, it's hot! *")
+        return 
+    
+smart_sandwich_maker("tomato", "cheese", "phone", "ham", "bread", )
