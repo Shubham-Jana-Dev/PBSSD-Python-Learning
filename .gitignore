@@ -23,3 +23,4 @@ rough.py
 #Test results file
 TestResults.xml
 rough.ipynb
+__pycache__
