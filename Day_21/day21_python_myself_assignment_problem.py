@@ -28,7 +28,8 @@ def more_pythonic(*args):
 # more_pythonic()
 
 '''
-Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number of keyword details.
+Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take
+ any number of keyword details.
 
 Sample output:-
 
@@ -60,7 +61,8 @@ def describe_pet(name,animal,**kwargs):
 # describe_pet("Whiskers", "cat", color="gray", age=3, favorite_food="tuna")
 
 '''
-Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number of keyword details.
+Write a function describe_pet that accepts a pet’s name and type as required arguments, but can also take any number 
+of keyword details.
 
 Sample output:-
 
@@ -81,7 +83,8 @@ The Goal: Write a function manage_inventory that:
 Takes a store_name as a required argument.
 Takes any number of items as *args.
 Takes stock_counts as **kwargs.
-The Logic: For every item in the list (args), print how many are in stock from the dictionary (kwargs). If it's not in the dictionary, print "Out of stock."
+The Logic: For every item in the list (args), print how many are in stock from the dictionary (kwargs). If it's not in the 
+dictionary, print "Out of stock."
 Example Call: manage_inventory("TechShop", "Laptop", "Mouse", "Monitor", Laptop=10, Mouse=5)
 
 Expected Output:
@@ -115,11 +118,9 @@ If their age is greater than or equal to min_age, print: "[Name] is invited."
 If their age is less than min_age OR their name isn't in kwargs, print: "[Name] is NOT invited."
 The Twist: If a guest is invited AND their age is 50 or above, they are a VIP (print "[Name] is a VIP!").
 Example Input:
-
 Python
 check_guests(21, "Shubham", "Rohan", "Amit", Shubham=25, Rohan=19, Amit=55)
 Expected Output:
-
 Plaintext
 Shubham is invited.
 Rohan is NOT invited.
