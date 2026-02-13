@@ -206,7 +206,7 @@ def pattern_14():
     x = int(input("Enter the number: "))
     for i in range(1,x+1):
         for j in range(0,x):
-            y = (j+ 1)* x - i + 1
+            y = (j + 1) * x - i + 1
             print(y,end="\t")
         print(" ")
 # pattern_14()
@@ -408,6 +408,15 @@ def pattern_26():
             print(char,end=" ")
         print(" ")
 # pattern_26()
+
+# another way
+def another_26():
+    x = "ABCDE"
+    for i in x:
+        for j in x:
+            print(i,end=" ")
+        print(" ")
+another_26()
 """
 A B C D E  
 A B C D E  
@@ -629,19 +638,17 @@ def pattern_39B():
                 print(j,end=" ")
         print(" ")
 # pattern_39B()
-# def pattern_40():
-#     y = 0
-#     x = int(input("Enter the number: "))
-#     for i in range(1,x+1):
-#         #y +=2
-#         i+=1
-#         for j in range(1,x+1):
-#             if j+i >= x+1:
-#                 y = i+(j*x)
-#                 #if j%2 ==0:
-#                 print(i,end=" ")
-#         print(" ")
-# # pattern_40()
+def pattern_40():
+    x = int(input("Enter the number: "))
+    for i in range(1,x+1):
+        for  j in range(1,x+1):
+            if j == i or i == x or j == 1 or i>=j:
+                print(i,end=" ")
+            else:
+                print(" ",end=" ")
+            x += 2
+        print(" ")
+pattern_40()
 """
 1  
 2 3  
@@ -671,6 +678,15 @@ def pattern_42():
         for j in range(i,i+i):
                 print(j,end=" ")
         print(" ")
+# pattern_42()
+def pattern_43():
+    r = int(input("Enter the number: "))
+    for i in range(1,r+1):
+        v = i -1
+        for j in range(1,i+1):
+            print(v+i,end=" ")
+            v +=2
+        print()
 # pattern_42()
 """
 1  
