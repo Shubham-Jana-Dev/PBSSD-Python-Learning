@@ -687,7 +687,7 @@ def pattern_43():
             print(v+i,end=" ")
             v +=2
         print()
-# pattern_42()
+# pattern_43()
 """
 1  
 3 2  
@@ -750,12 +750,27 @@ def pattern_47():
                 print(i*j,end=" ")
         print(" ")
 # pattern_47()
-# def pattern_48():
-#     x = int(input("Enter the number: ")) 
-#     for i in range(1,x+1):
-#         k = i*(i+1)//2
-#         for j in range(i):
-#                 print(k,end=" ")
-#                 k -= (i-j)
-#         print(" ")
-# pattern_48()
+def pattern_48():
+    Range = int(input("Enter the number: ")) 
+    x = y = 1
+    z = a = x 
+    for i in range(1,Range+1):
+        y = z + y 
+        for j in range(1,Range+1):
+                if i >= j:
+                    print(x,end=" ")
+                    x = x-a
+                    a= a+1
+                else:
+                    print(" ",end=" ")
+        x = y
+        z =z -1
+        a =z
+        print(" ")
+pattern_48()
+def pattern_50():
+    Range = int(input("Enter the range: "))
+    for i in range(1,Range+1):
+        for j in range(i):
+            print("*",end=" ")
+        print(" ")
