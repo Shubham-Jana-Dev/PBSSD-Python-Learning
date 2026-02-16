@@ -8,6 +8,7 @@ def prime_numbers(num):
         print("This is a prime number.")
 # num = int(input("Enter the number: "))
 # prime_numbers(num)
+
 # Print all digits of a number.
 def print_digits(num):
     temp = num
@@ -17,3 +18,15 @@ def print_digits(num):
         print(rem)
         temp //= 10
 # print_digits(3432)
+
+# Reverse a Number 
+def reverse_number(num):
+    temp = num
+    rev = 0
+    length = len(str(num))
+    while temp != 0:
+        last_digit = temp%10
+        rev = rev*10+last_digit
+        temp//=10
+    print(f"The reversed number is {rev}.")
+reverse_number(22156)
