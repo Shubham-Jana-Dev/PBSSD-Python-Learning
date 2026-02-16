@@ -360,4 +360,15 @@ def problem_50_slab():
     else:
         print(f"TOTAL BILL \nYour bill amount is ₹ {bill:.2f} /-")
 
-problem_50_slab()
+# problem_50_slab()
+# 51. Find whether a given month has 30 or 31 days.
+def problem_51():
+    month = int(input("Enter the coresponding number of the month: "))
+    if 0 < month <= 12:
+        if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+            print(f"This month has 31 days.")
+        else:
+            print(f"This month has <30 days.")
+    else:
+        print("Please enter the valid id,")
+problem_51()
