@@ -6,5 +6,14 @@ def prime_numbers(num):
             break
     else:
         print("This is a prime number.")
-num = int(input("Enter the number: "))
-prime_numbers(num)
+# num = int(input("Enter the number: "))
+# prime_numbers(num)
+# Print all digits of a number.
+def print_digits(num):
+    temp = num
+    length = len(str(temp))
+    while temp != 0:
+        rem = temp%10
+        print(rem)
+        temp //= 10
+# print_digits(3432)
