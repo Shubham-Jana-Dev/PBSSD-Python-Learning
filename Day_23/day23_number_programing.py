@@ -54,3 +54,18 @@ def palindrome(num):
     else:
         print(f"{num} is not a palindrome number")
 # palindrome(19031)
+
+# Check a mstrong number is an Amstrong number is not.
+def armstrong(num):
+    temp = num
+    power = 0
+    length = len(str(temp))
+    while temp != 0:
+        last_digit = temp%10
+        power = power + last_digit**length
+        temp //= 10
+    if power == num:
+        print(f"{num} is an amstrong number.")
+    else:
+        print(f"{num} is not an amstrong number.")
+armstrong(370)
