@@ -68,7 +68,7 @@ def armstrong(num):
         print(f"{num} is an amstrong number.")
     else:
         print(f"{num} is not an amstrong number.")
-armstrong(370)
+# armstrong(370)
 """
 The 100-Door Challenge: > Imagine there are 100 closed doors in a hallway.
 ​You walk past and open every door.
@@ -86,4 +86,20 @@ def perfect_squre():
             count_squre += 1
             print(f"{j} number door is opened")
     print(f"the number of opened door is {count_squre}")
-perfect_squre()
+# perfect_squre()
+
+# Check a number is spy number or not.
+def spy_number(num):
+    temp = num
+    product = 1
+    Sum = 0
+    while temp != 0:
+        last = temp%10
+        Sum += last
+        product *= last
+        temp //= 10
+    if Sum == product:
+        print(f"{num} is a spy number.")
+    else:
+        print(f"{num} is not a spy number.")  
+spy_number(123)
