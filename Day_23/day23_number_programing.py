@@ -69,3 +69,21 @@ def armstrong(num):
     else:
         print(f"{num} is not an amstrong number.")
 armstrong(370)
+"""
+The 100-Door Challenge: > Imagine there are 100 closed doors in a hallway.
+​You walk past and open every door.
+​You walk past again and toggle (close if open, open if closed) every 2nd door.
+​You walk past again and toggle every 3rd door.
+...and you do this until you've passed 100 times.
+Which doors remain open at the end? (Hint: Think about your Armstrong/Prime logic—it has to do with factors!)
+"""
+
+def perfect_squre():
+    count_squre = 0
+    for i in range(1,101):
+        j = i*i
+        if j <= 100:
+            count_squre += 1
+            print(f"{j} number door is opened")
+    print(f"the number of opened door is {count_squre}")
+perfect_squre()
