@@ -28,5 +28,29 @@ def reverse_number(num):
         last_digit = temp%10
         rev = rev*10+last_digit
         temp//=10
-    print(f"The reversed number is {rev}.")
-reverse_number(22156)
+    return rev
+    # print(f"The reversed number is {rev}.")
+# reverse_number(22156)
+
+# Check a number is a palindrome number or not.
+def check_palindrome(num):
+    if num == reverse_number(num):
+        print(f"{num} is a palindrome number.")
+    else: 
+        print(f"{num} is not a palindrome number.")
+# check_palindrome(1221)
+
+# The raw method
+
+def palindrome(num):
+    temp = num
+    reverse = 0
+    while temp != 0:
+        last_digit = temp%10
+        reverse = reverse*10+last_digit
+        temp//=10
+    if num == reverse:
+        print(f"{num} is a palindrome number.")
+    else:
+        print(f"{num} is not a palindrome number")
+# palindrome(19031)
