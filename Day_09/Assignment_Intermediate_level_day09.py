@@ -458,11 +458,15 @@ def problem_56():
 def problem_57():
     start = int(input("Enter the starting range: "))
     end = int(input("Enter the ending range: "))
-    num = int(input("Enter the number: "))
-    if start <= num <= end:
-        print(f"{num} is inside the range.")
+    if start > end:
+        print("please enter the the ranges in right order. :(")
+        problem_57()
     else:
-        print(f"{num} is outside the range.")
+        num = int(input("Enter the number: "))
+        if start <= num <= end:
+            print(f"{num} is inside the range.")
+        else:
+            print(f"{num} is outside the range.")
 problem_57()
 # 58. Find whether the input number is odd and divisible by 3.
 # 59. Find whether a given age is eligible for driving license.
