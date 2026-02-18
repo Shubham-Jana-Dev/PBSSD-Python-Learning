@@ -399,6 +399,13 @@ def perfect_squre():
     print(root)
     print(int_r)
     print(squre_r)
-perfect_squre()
-c = 2%10
-print(c)
+# perfect_squre()
+
+# 54. Check whether a number is divisible by 10 and 5.
+def problem_54():
+    number = int(input("Enter the number: "))
+    if number%10 == 0 and number%5 == 0 :
+        print(f"{number} is divisible by 10 and 5.")
+    else:
+        print(f"{number} is not divisible by 10 and 5.")
+problem_54()
