@@ -385,4 +385,20 @@ def problem_52():
             print(f"{char} is a consonant.")
     else:
         print("Please enter a valid input. :(")
-problem_52()
+# problem_52()
+# 53. Check whether a number is a perfect square (logic-based).
+def perfect_squre():
+    num = int(input("Enter the number: "))
+    root = num ** (0.5)
+    int_r = int(root)
+    squre_r = int_r*int_r
+    if squre_r == num:
+        print(f"{num} is a perfect squre number. :)")
+    else:
+        print(f"{num} is not a perfect squre number. :(")
+    print(root)
+    print(int_r)
+    print(squre_r)
+perfect_squre()
+c = 2%10
+print(c)
