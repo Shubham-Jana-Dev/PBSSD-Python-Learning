@@ -50,7 +50,7 @@ def problem_35():
         print("Yes it's a 3-digit number.")
     else:
         print("It's not a 3-digit number.")
-problem_35()
+# problem_35()
 #36. Check whether a number is divisible by 3 and 5.
 def problem_36():
     num = int(input("Enter the number: "))
@@ -371,4 +371,18 @@ def problem_51():
             print(f"This month has <30 days.")
     else:
         print("Please enter the valid id,")
-problem_51()
+# problem_51()
+# 52. Find whether a character is uppercase 
+# vowel, lowercase vowel, or consonant.
+def problem_52():
+    char = input("Enter a charecter: ")
+    if 'A' <= char <= 'Z' or 'a' <= char <= 'z':
+        if char == "A" or char == "E" or char == "I" or char == "O" or char == "U":
+            print(f"{char} is a uper case vowel.")
+        elif char == "a" or char == "e" or char == "i" or char == "o" or char == "u":
+            print(f"{char} is a lower case vowel.")
+        else:
+            print(f"{char} is a consonant.")
+    else:
+        print("Please enter a valid input. :(")
+problem_52()
