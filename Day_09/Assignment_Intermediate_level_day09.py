@@ -1,4 +1,4 @@
-#31 Find out the leargest number between two numbers.
+#31 Find out the largest number between two numbers.
 def problem_31():
     a = float(input("Enter the first number: "))
     b = float(input("Enter the second number: "))
@@ -359,8 +359,8 @@ def problem_50_slab():
         print("BILL FREE :) \nYour bill amount is ₹ 0.00 /-")
     else:
         print(f"TOTAL BILL \nYour bill amount is ₹ {bill:.2f} /-")
-
 # problem_50_slab()
+
 # 51. Find whether a given month has 30 or 31 days.
 def problem_51():
     month = int(input("Enter the coresponding number of the month: "))
@@ -372,6 +372,7 @@ def problem_51():
     else:
         print("Please enter the valid id,")
 # problem_51()
+
 # 52. Find whether a character is uppercase 
 # vowel, lowercase vowel, or consonant.
 def problem_52():
@@ -386,6 +387,7 @@ def problem_52():
     else:
         print("Please enter a valid input. :(")
 # problem_52()
+
 # 53. Check whether a number is a perfect square (logic-based).
 def perfect_squre():
     num = int(input("Enter the number: "))
@@ -408,4 +410,48 @@ def problem_54():
         print(f"{number} is divisible by 10 and 5.")
     else:
         print(f"{number} is not divisible by 10 and 5.")
-problem_54()
+# problem_54()
+# 55. Find the greater number among three using nested if.
+def problem_55():
+    num1 = int(input('Enter the first number: '))
+    num2 = int(input("Enter the second number: "))
+    num3 = int(input("Enter the third number: "))
+    if num1 > num2:
+        if num1 > num3:
+            print(f"{num1} is the largest.")
+        else:
+            print(f"{num3} is the largest. ")
+    else:
+        if num2 > num3:
+            print(f"{num2} is the largest")
+        else:
+            print(f"{num3} is the largest.")
+problem_55()
+
+def without_nested():
+    num1 = int(input('Enter the first number: '))
+    num2 = int(input("Enter the second number: "))
+    num3 = int(input("Enter the third number: "))
+    if num1 > num2 and num1>num3:
+        print(f"{num1} is the largest")
+    elif num2>num3:
+        print(f"{num2} is the largest.")
+    else:
+        print(f"{num3} is the largest.")
+without_nested()
+
+# 56. Find the second largest of three numbers.
+# 57. Check whether a number is inside or outside a given range.
+# 58. Find whether the input number is odd and divisible by 3.
+# 59. Find whether a given age is eligible for driving license.
+# 60. Check whether a number is divisible by 6.
+# 61. Check whether a number is divisible by 4 but not by 6.
+# 62. Find whether a year is leap or non-leap using logical operators.
+# 63. Check whether a number is divisible by both 2 and 7.
+# 64. Check whether a number ends with zero.
+# 65. Check whether a character is a letter, digit, or special character.
+# 66. Check whether temperature is hot, warm, or cold.
+# 67. Find the largest of four numbers.
+# 68. Check whether a number is greater than the average of two numbers.
+# 69. Check whether a number is divisible by its last digit.
+# 70. Check whether a number is positive but not even.
