@@ -452,8 +452,18 @@ def problem_56():
         print(f"{a} is the second largest number.")
     else:
         print(f"{c} is the second largest number.")
-problem_56()
+# problem_56()
+
 # 57. Check whether a number is inside or outside a given range.
+def problem_57():
+    start = int(input("Enter the starting range: "))
+    end = int(input("Enter the ending range: "))
+    num = int(input("Enter the number: "))
+    if start <= num <= end:
+        print(f"{num} is inside the range.")
+    else:
+        print(f"{num} is outside the range.")
+problem_57()
 # 58. Find whether the input number is odd and divisible by 3.
 # 59. Find whether a given age is eligible for driving license.
 # 60. Check whether a number is divisible by 6.
