@@ -411,6 +411,7 @@ def problem_54():
     else:
         print(f"{number} is not divisible by 10 and 5.")
 # problem_54()
+
 # 55. Find the greater number among three using nested if.
 def problem_55():
     num1 = int(input('Enter the first number: '))
@@ -426,7 +427,7 @@ def problem_55():
             print(f"{num2} is the largest")
         else:
             print(f"{num3} is the largest.")
-problem_55()
+# problem_55()
 
 def without_nested():
     num1 = int(input('Enter the first number: '))
@@ -438,9 +439,20 @@ def without_nested():
         print(f"{num2} is the largest.")
     else:
         print(f"{num3} is the largest.")
-without_nested()
+# without_nested()
 
 # 56. Find the second largest of three numbers.
+def problem_56():
+    a = int(input("Enter the first number: "))
+    b = int(input("Enter the second number: "))
+    c = int(input("Enter the third number: "))
+    if (a <= b <= c) or (c <= b <= a):
+        print(f"{b} is the second largest number.")
+    elif (b <= a <= c) or (c <= a <= b):
+        print(f"{a} is the second largest number.")
+    else:
+        print(f"{c} is the second largest number.")
+problem_56()
 # 57. Check whether a number is inside or outside a given range.
 # 58. Find whether the input number is odd and divisible by 3.
 # 59. Find whether a given age is eligible for driving license.
