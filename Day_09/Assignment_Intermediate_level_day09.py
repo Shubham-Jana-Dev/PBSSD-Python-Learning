@@ -467,7 +467,7 @@ def problem_57():
             print(f"{num} is inside the range.")
         else:
             print(f"{num} is outside the range.")
-problem_57()
+# problem_57
 # 58. Find whether the input number is odd and divisible by 3.
 # 59. Find whether a given age is eligible for driving license.
 # 60. Check whether a number is divisible by 6.
