@@ -60,12 +60,24 @@ def max_func():
 def using_count_func():
     my_list = [1,2,3,2,4,5,2,6,5,2,10]
     print(my_list.count(2)) 
-using_count_func()  
+# using_count_func()  
 
 # 8. sort a list
 def sort_a_list():
     the_list = [12,11,23,15,16,27,14,13,25,20,21,17]
     the_list.sort()
     print(the_list)
-sort_a_list()
+# sort_a_list()
+
+# 9. reverse a list
+def reverse_a_list():
+    the_list = [12,11,23,15,16,27,14,13,25,20,21,17]
+    print(the_list[::-1])
+# reverse_a_list()
+
+# 10. print "Hello" form the list (the_list = ["Good",1,2,3[4,5,[6,4,2,"Hello"],8,9]])
+def print_element():
+    the_list = ["Good",1,2,3,[4,5,[6,4,2,"Hello"],8,9]]
+    print(the_list[4][2][3])
+print_element()
 
