@@ -28,5 +28,18 @@ def filter_s_names():
     names = ['Shubham','Surajit','Arjun','Sneha','Karan','Sinchan','Doremon','Sisimanu']
     s_names = [n for n in names if 'S' in n]
     print(s_names)
-filter_s_names()
+# filter_s_names()
 
+# sort a unsorted list. (by function)
+def sort_list():
+    My_list = [2,5,1,4,6,3,8,7,10,9,14,12,11,13]
+    My_list.sort()
+    print(My_list)
+#sort_list()
+# sort a list in descending order.
+def sort_listd():
+    My_list = [2,5,1,4,6,3,8,7,10,9,14,12,11,13]
+    My_list.sort()
+    My_list = My_list[::-1]
+    print(My_list)
+sort_listd()
