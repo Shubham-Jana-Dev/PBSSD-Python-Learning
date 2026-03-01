@@ -1,4 +1,3 @@
-# Task no.1
 # Take a dynamic list from the user and swap the first and the last element of the list (within 1.5 min)
 def print_f_l_element():
     a = []
