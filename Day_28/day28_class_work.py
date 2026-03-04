@@ -84,4 +84,5 @@ def second_smallest_element():
             if a[j] < a[j+1]:
                 a[j],a[j+1]=a[j+1],a[j]
     print(a[-2])
-second_smallest_element()
+# second_smallest_element()
+

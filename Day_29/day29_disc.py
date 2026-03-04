@@ -33,3 +33,19 @@ def student_status():
             count += 1
     print(f"The total number of passed students: {count}")
 # student_status()
+def future():
+    lmg_2036 = {"Arjuna":2, "Mimi":3, "Neha":5, "Shanvi":1, "Pooja":4}
+    if "Shanvi"  in lmg_2036:
+        print(lmg_2036["Shanvi"])
+    else:
+        print("Shanvi is not in the list, wait for 2036.")
+    # update Mimi's roll number.
+    lmg_2036['Mimi'] = 10
+    print(list(lmg_2036)) # roll numbers are not printing. :(
+    roll = []
+    for i in lmg_2036:
+        roll.append(f"name = {i} roll = {lmg_2036[i]}")
+    print(roll) # now roll numbers are also printing :)
+    lmg_2036.pop("Pooja")
+    print(lmg_2036)
+future()
