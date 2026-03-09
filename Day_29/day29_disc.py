@@ -33,6 +33,7 @@ def student_status():
             count += 1
     print(f"The total number of passed students: {count}")
 # student_status()
+
 def future():
     lmg_2036 = {"Arjuna":2, "Mimi":3, "Neha":5, "Shanvi":1, "Pooja":4}
     if "Shanvi"  in lmg_2036:
@@ -48,4 +49,14 @@ def future():
     print(roll) # now roll numbers are also printing :)
     lmg_2036.pop("Pooja")
     print(lmg_2036)
-future()
+#future()
+
+def functions_of_set():
+    set1 = {1,2,3,4,5,6,"Shubham","Raj","Doremon","Hello",34,45}
+    set2 = {'Shubham',4,5,6,'Hello',10,11,12,13,14,15,16,'seven'}
+    intersection1 = set1 & set2
+    print(intersection1)
+    union1 = set1 | set2
+    print(f"The union of Set1 and set2 is union is {union1}")
+    print(set1.union(set2))
+functions_of_set()    
