@@ -82,4 +82,13 @@ def functions_of_set():
     print(setC)
     setC.clear() # to delete all elements from a list
     #setC.remove('h') will not run
-functions_of_set()    
+# functions_of_set()    
+
+def function_of_tuple():
+    my_tuple = (4,5,6,3,7,4,"Shubham","Python","Branch",4,3,90,100)
+    print(my_tuple.count(5))
+    print(4 in my_tuple)
+    print(my_tuple.count("Shubham"))
+    print(sorted(my_tuple))
+
+    
