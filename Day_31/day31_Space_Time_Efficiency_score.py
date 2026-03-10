@@ -4,10 +4,9 @@ import sys
 def profile_data_structure(data, name, target):
     size_in_mb = sys.getsizeof(data)/(1024**2)
 
-    start = time.time()
+    start = time.perf_counter()
     _ = target in data
-    end = time.time()
-    duration = end - start
+    duration = time.perf_counter() - start
 
     return{"name":name, 'size':size_in_mb, 'time':duration}
 
