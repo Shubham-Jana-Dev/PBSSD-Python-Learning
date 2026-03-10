@@ -54,9 +54,32 @@ def future():
 def functions_of_set():
     set1 = {1,2,3,4,5,6,"Shubham","Raj","Doremon","Hello",34,45}
     set2 = {'Shubham',4,5,6,'Hello',10,11,12,13,14,15,16,'seven'}
-    intersection1 = set1 & set2
-    print(intersection1)
-    union1 = set1 | set2
-    print(f"The union of Set1 and set2 is union is {union1}")
-    print(set1.union(set2))
+    union1 = set1 | set2 # returns all elments of both set
+    print(f"The union of Set1 and set2 (by using '|' symbol) is {union1}")
+    print(f"The union of set1 and set2 (by .union keyword) is {set1.union(set2)}")
+    intersection1 = set1 & set2 # returns only the common elements 
+    print(f"The intersection of set1 and set2 (by using '&' symbol) {intersection1}")
+    print(f"The intersection of set1 and set3 (by .intersection keyword) is {set1.intersection(set2)}")
+    difference1 = set1 - set2 # returns the elements present in the set1 but in the set2
+    print(f"set1 - set2 = {difference1}")
+    print(f"set2 - set1 = {set2.difference(set1)}") 
+    symmetric_difference1 = set1 ^ set2  # returns all the elements exsept the common elements
+    print(f"set2 ^ set1 = {set2.symmetric_difference(set1)}")
+    print(f"set1 ^ set2 = {symmetric_difference1}")
+    setA = {1,2,3,4,"Hi",5,6,7,8,9}
+    setB = {1,4,5,"Hi",6,9}
+    setC = {122,433,"Shubham"}
+    print(setA.issubset(setB))
+    print(setB.issubset(setA))
+    print(setA.issuperset(setB))
+    print(setB.issuperset(setA))
+    print(setA.isdisjoint(setC)) # True if two sets have no elements in common
+    setC.add(354)
+    setC.update([443,90])
+    setC.remove(443)
+    setC.discard(90)
+    setC.discard('h') # will run
+    print(setC)
+    setC.clear() # to delete all elements from a list
+    #setC.remove('h') will not run
 functions_of_set()    
