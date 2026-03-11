@@ -99,8 +99,9 @@ def challenges():
     db1 = {"id1":"Shubham","id2":"Raj"}
     db2 = {"id2":"Raj","id3":"Sulekha"}
     db3 = {key: db1[key] for key in db1 if key in db2}
+    db4 = db1 | db2
     print(db3)
-    return db3
+    print(db4)
 challenges()
 
     
