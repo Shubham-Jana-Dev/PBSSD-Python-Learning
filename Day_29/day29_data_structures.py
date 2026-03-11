@@ -95,4 +95,12 @@ def function_of_tuple():
     print(tuple(sorted(tuple_a,reverse = True)))
 function_of_tuple()
 
+def challenges():
+    db1 = {"id1":"Shubham","id2":"Raj"}
+    db2 = {"id2":"Raj","id3":"Sulekha"}
+    db3 = {key: db1[key] for key in db1 if key in db2}
+    print(db3)
+    return db3
+challenges()
+
     
