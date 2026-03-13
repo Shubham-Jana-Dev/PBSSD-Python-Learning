@@ -24,3 +24,6 @@ rough.py
 TestResults.xml
 rough.ipynb
 __pycache__
+*.swp
+*.swo
+*.swn
