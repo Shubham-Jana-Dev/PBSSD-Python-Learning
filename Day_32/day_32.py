@@ -32,9 +32,15 @@ def optimize_logs(logs):
                 "unique_metadata_count":len(user_metadata_keys[uid])
             } for uid in user_actions
         }
+"""
 logs = [
     {'user_id': 1, 'action': 'login', 'timestamp': 100, 'metadata': {'ip': '1.1.1.1'}},
     {'user_id': 1, 'action': 'click', 'timestamp': 105, 'metadata': {'btn': 'buy'}},
     {'user_id': 1, 'action': 'login', 'timestamp': 110, 'metadata': {'ip': '1.1.1.1', 'device': 'mobile'}}
 ]
 print(optimize_logs(logs))
+"""
+
+
+
+
