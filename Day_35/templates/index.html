@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Animated Website</title>
+    <style>        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            overflow-x: hidden;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            color: #ff6f91;
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ff6f91;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {            color: #ff9a9e;
+        }        .section {
+            padding: 50px;
+            text-align: center;
+            animation: slideIn 1s ease-in-out;
+        }
+        .section:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .section:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .section h2 {         color: #ff6f91;
+            font-size: 2.5em;     }      
+             .section p {      color: #333;       font-size: 1.2em;     }        @keyframes fadeIn {        from { opacity: 0; }        to { opacity: 1; }
+        }        @keyframes slideIn {        from { transform: translateX(-100%); }        to { transform: translateX(0); }
+        }    </style>
+</head><body>
+    <header>        <h1>Welcome to My Colorful Website</h1>
+        <nav>            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+        </nav>
+    </header>
+    <div class="section" id="section1">        <h2>Section 1</h2>
+        <p>This is the first section of the website. It has a vibrant background and smooth sliding animation.</p>
+    </div>
+    <div class="section" id="section2">        <h2>Section 2</h2>
+        <p>This is the second section of the website. It continues the colorful theme and includes a fading effect.</p>
+    </div>
+    <div class="section" id="section3">        <h2>Section 3</h2>
+        <p>This is the third section of the website. It maintains   the vibrant color scheme and includes a bouncing effect.</p>
+    </div>      <script>        // Add interactivity to the navigation links
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });    </script></body>
+</html> 
